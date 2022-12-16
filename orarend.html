@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Devá Yoga studio órarendje."></head>
+    <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/timetable.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/languageChange.js"></script>
+    <script  src="js/map.js"></script>
+    <title>Órarend &mdash; Devá Jóga Stúdió</title>
+</head>
+<body id="body">
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header_nav">
+            
+            <div class="header_nav_container">
+                <!-- MOBILE HAMI -->
+                <div class="mobile-menu-hambi">
+                    <div class="mobile-menu-hambi-1"></div>
+                    <div class="mobile-menu-hambi-2"></div>
+                    <div class="mobile-menu-hambi-3"></div>
+                </div>
+                <div class="mobile-menu-hambi-close">
+                    <div class="mobile-menu-hambi-close-1"></div>
+                    <div class="mobile-menu-hambi-close-2"></div>
+                </div>
+                <!-- MOBILE HAMI END-->
+                <div class="header_nav_container_logo">
+                    <img  src="/photos/svg/dy_small.svg" alt="szeged jóga stúdió logója">
+                </div>
+                
+                <ul class="header_nav_container_ul">
+                    <li ><a href="index.php">HOME</a></li>
+                    <li ><a id="nav-2" href="jogafotok.php">GALÉRIA</a></li>
+                    <li ><a id="nav-3" href="orarend.php"><span class="btn_home">ÓRAREND</span></a></li>
+                    <li ><a id="nav-4" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
+                    <li ><a id="nav-5" href="joga-hazirend.php">HÁZIREND</a></li>
+                    <li ><a id="nav-6" href="arlista.php">ÁRLISTA</a></li>
+                    <li ><a id="nav-7" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
+                    <li ><a id="nav-8" href="oratipusok.php">ÓRATÍPUSOK</a></li>
+                    <li id="nav-9" onClick="document.getElementById('contact').scrollIntoView();" class="btn_nav">kapcsolat</li>
+                </ul>
+                <!-- NAV SOCIAL MEDIA -->
+                <div class="header_nav_container_social">
+                    <img id="hu" class="hidden" src="/photos/svg/hu.svg" width="34px" height="34px"  alt="deva yoga nyelv HUNGARY">
+                    <img id="eng" src="/photos/svg/eng.svg" width="34px" height="34px"  alt="ENGLISH LANGUAGE DEVA YOGA">
+                  <a href="https://www.instagram.com/devayoga_studio/"><img  src="/photos/social/instagram.svg" alt="devá yoga stúdio instragram elérhetőség"></a>
+                  <a href="https://www.facebook.com/devayogastudio"> <img src="/photos/social/facebook.svg" alt="devá yoga stúdio facebook elérhetőség"></a></a> 
+                </div>
+                <!-- NAV SOCIAL MEDIA END -->
+            </div>
+        </nav>
+        <!-- MOBIL MENU-->
+        <div class="mobile-menu">
+            <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
+                <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
+                <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
+                <li><a class="mobile-rule" href="joga-hazirend.php">HÁZIREND</a></li>
+                <li><a class="mobile-prices" href="arlista.php">ÁRLISTA</a></li>
+                <li><a class="mobile-traning" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
+                <li><a class="mobile-type" href="oratipusok.php">ÓRATÍPUSOK</a></li>
+            </ul>
+        </div>
+    <!-- MOBILE END -->
+    </header>
+    <!-- HEADER  END-->
+
+    <!-- ÓRARENND -->
+    <section class="main">
+        
+        <div class="main_mandala">
+            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+        </div>
+        <div class="main_mainHedTitle">
+            <h1>ÓRAREND</h1>
+        </div>
+        <div  class="text-center"> <h2>Frissítve: 2022-12-16</h2></div>
+        <div class="w-100"><p>Az órák látogatásának a feltétele az órára való előzetes bejelentkezés a weboldalon található elérhetőségen vagy a Facebookon. <b> Az órarend sűrűn frissülhet, ezért kérlek ellenőrizd a Facebookon is.</b></p></div>
+              <div class="days invisible">
+                <ul class="days-ulist">
+                    <li class="days-list"> <a href="#hetfo">Hetfő</a></li>
+                    <li class="days-list"> <a href="#kedd">Kedd</a></li>
+                    <li class="days-list"> <a href="#szerda">Szerda</a></li>
+                    <li class="days-list"> <a href="#csutortok">csüt</a></li>
+                    <li class="days-list"> <a href="#penek">Péntek</a></li>
+                    <li class="days-list"> <a href="#szombat">Szombat</a></li>
+                    <li class="days-list"> <a href="#vasarnap">Vasárnap</a></li>
+                </ul>
+             </div> 
+             
+             <div class="download">
+                 <p>Órarendet letöltése<p>
+                <a href="/photos/download/B572ACA1-C6FD-4E73-9C33-E151ABF59F9E.pdf" download>
+                  <img src="./photos/download.svg" alt="órarend" width="50" height="50">
+                </a>
+            </div>
+             
+                
+             
+        <!-- ÓRAREND GRID CONTAINER STARTS -->
+        <div class="main_container"> 
+            <!-- DAY HÉTFŐ-->
+            <div id="hetfo" class="main_container_day h-1  ">
+                <div class="day">Hétfő</div>
+                <div class="time">09:00</div>
+                <div class="type-yoga">Középhaladó</div>
+                <div class="style">90 perc </div>
+                <div class="tipe marginminusimportant">Illatesszenciás<br>Hatha Jóga<br><span class="doterra">Panarom/Doterra</span></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="Devá Yoga mandala logo">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/livi.png" width="50px" height="50px" alt="Becsei-Romsics Livi Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name " >Livi</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END HÉTFŐ -->
+            <!-- DAY KEDD-->
+            <div id="kedd" class="main_container_day bgc k-1  mgt4rem-600">
+                <div class="day">Kedd</div>
+                <div class="time">11:30</div>
+                <div class="type-yoga ">kezdő</div>
+                <div class="style">60 perc</div>
+                <div class="tipe">Kismama<br>Jóga </div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/detti.png" width="50px" height="50px" alt="Kulacsik bernadett Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Detti</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END KEDD-->
+            <!-- DAY SZERDA-->
+            <div id="szerda" class="main_container_day mgt4rem sz-1 ">
+                <div class="day">Szerda</div>
+                <div class="time">--</div>
+                <div class="type-yoga">--</div>
+                <div class="style">--</div>
+                <div class="tipe">--<br>--</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox center-prefix">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name mgb4rem ">--</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END SZERDA -->
+            <!-- DAY CSÜTÖRTÖK-->
+            <div id="csutortok" class="main_container_day inter bgc cs-1 mgt4rem ">
+                <div class="day">Csütörtök </div>
+                <div class="time">10:00</div>
+                <div class="type-yoga ">International</div>
+                <div class="style">90 perc</div>
+                <div class="tipe">Hatha Flow<br>In English</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/lilla.png" width="50px" height="50px" alt="Hódi Lilla Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Lilla</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- DAY END CSÜTÖRTÖK -->
+                   <!-- DAY PÉNTEK-->
+                   <div id="penek" class="main_container_day p-1 pos-rel mgt4rem">
+                    <div class="day">Péntek </div>
+                   <!-- <img class="soon" src="/photos/svg/soon.svg" alt=""> -->
+                    <div class="time">09:00</div>
+                    <div class="type-yoga">Kezdő/haladó</div>
+                    <div class="style">90 perc</div>
+                    <div class="tipe ">Könnyű<br>Flow<br></span></div>
+                    <div class="mandalaLogo">
+                        <img src="/photos/orarend/mandala.svg" alt="#">
+                    </div>
+                    <div class="photo"> 
+                    
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/detti.png" width="50px" height="50px" alt="Kulacsik bernadett Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Detti</p>
+                    </div>
+                    </div>
+                </div>
+                <!-- DAY END PÉNTEK -->
+                        <!-- DAY SZOMBAT-->
+                        <div id="szombat" class="main_container_day szo-1 bgc mgt4rem ">
+                            <div class="day">Szombat</div>
+                            <div class="time">--</div>
+                            <div class="type-yoga">--</div>
+                            <div class="style">--</div>
+                            <div class="tipe">--<br>--</div>
+                            <div class="mandalaLogo">
+                                <img src="/photos/orarend/mandala.svg" alt="#">
+                            </div>   
+                                <div class="photo_photoBox center-prefix">
+                                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                                    <p class="photo_photoBox_name mgb4rem ">--</p>
+                                </div>
+                        </div> 
+                <!-- DAY END SZOMBAT -->
+            <!-- DAY VASARNAP-->
+                  <div id="vasarnap" class="main_container_day  v-1 mgt4rem">
+                
+                    <div class="day">Vasárnap </div>
+                    <div class="time">08:30</div>
+                    <div class="type-yoga">Kezdő</div>
+                    <div class="style">90 perc</div>
+                    <div class="tipe"> Csakraharmonizáló<br>Hatha jóga</div>
+                    <div class="mandalaLogo">
+                        <img src="/photos/orarend/mandala.svg" alt="#">
+                    </div>
+                    <div class="photo"> 
+                        <div class="photo_photoBox">
+                            <img src="/photos/orarend/szilvi.svg" width="50px" height="50px" alt="Szilvi">
+                            <p class="photo_photoBox_name">Szilvi</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- DAY END VASARNAP -->
+            <!-- DAY HETFO 2-->
+            <div class="main_container_day h-2 pos-rel ">
+              <!--  <img class="soon" src="/photos/svg/soon.svg" alt=""> -->
+                <div class="time">15:30</div>
+                <div class="type-yoga">Kezdő/Kisdiákok részére</div>
+                <div class="style">60 perc</div>
+                <div class="tipe">Tini <br> Jóga</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/nori.svg" width="50px" height="50px" alt="Nóra Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Nóra</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END HETFO 2 -->
+            <!-- DAY KEDD 2-->
+            <div class="main_container_day k-2 bgc   ">
+                
+                <div class="time">18:00</div>
+                <div class="type-yoga">Páros oktatós/Kezdő-haladó </div>
+                <div class="style"> 90 perc</div>
+                <div class="tipe">Tematikus <br> Yin Jóga</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/detti.png" width="50px" height="50px" alt="Kulacsik bernadett Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Detti</p>
+                    </div>
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/tomi.png" width="50px" height="50px" alt="Kulacsik Tamás Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Tomi</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- DAY END KEDD 2-->
+            <!-- DAY SZERDA 2-->
+            <div class="main_container_day  sz-2">
+                <div class="time">18:30</div>
+                <div class="type-yoga">Kezdő</div>
+                <div class="style">90 perc</div>
+                <div class="tipe">Gerincterápiás <br> Jóga</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/lilla.png" width="50px" height="50px" alt="Hódi Lilla Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Lilla</p>
+                    </div>
+                </div>
+            </div>
+              <!-- DAY END SZERDA 2-->
+              <!-- DAY  CSUTORTOK 2-->
+            <div class="main_container_day cs-2 bgc pos-rel   ">
+                <div class="time">--</div>
+                <div class="type-yoga">--</div>
+                <div class="style">--</div>
+                <div class="tipe">--<br>--</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox center-prefix">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name mgb4rem ">--</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END CSUTORTOK 2-->
+               <!-- DAY  PÉNTEK 2-->
+               <div class="main_container_day p-2">
+                
+                <div class="time">16:30</div>
+                <div class="type-yoga">Kezdő</div>
+                <div class="style">90 perc</div>
+                <div class="tipe">Power<br>Jóga</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                   <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Hódi Lilla Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Melinda</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END PENTEK 2-->
+             <!-- DAY  SZOMBAT 2-->
+           <div class="main_container_day szo-2 bgc  ">
+                
+                <div class="time">--</div>
+                <div class="type-yoga">--</div>
+                <div class="style">--</div>
+                <div class="tipe">--<br>--</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                            <img src="/photos/orarend/melinda.svg"50px" height="50px" alt="Szilvi">
+                            <p class="photo_photoBox_name">--</p>
+                        </div>
+                </div>
+            </div> 
+            <!-- DAY END SZOMBAT 2-->
+               <!-- DAY  VASARNAP 2-->
+               <div class="main_container_day v-2">
+                
+                <div class="time">10:30</div>
+               <div class="type-yoga">Kezdő</div>
+               <div class="style">90 perc</div>
+               <div class="tipe">Női egyensúly <br>megteremtése</div>
+               <div class="mandalaLogo">
+                   <img src="/photos/orarend/mandala.svg" alt="#">
+               </div>
+               <div class="photo"> 
+                   <div class="photo_photoBox">
+                           <img src="/photos/orarend/szilvi.svg" width="50px" height="50px" alt="Szilvi">
+                           <p class="photo_photoBox_name">Szilvi</p>
+                       </div>
+               </div>
+            </div>
+            <!-- DAY END VASARNAP 2-->
+            <!-- DAY HETFO 3-->
+            <div class="main_container_day h-3   ">
+                <div class="time">18:30</div>
+                <div class="type-yoga">Haladó</div>
+                <div class="style">90 perc</div>
+                <div class="tipe">Tematikus<br>Hatha flow</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/lilla.png" width="50px" height="50px" alt="Hódi Lilla Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Lilla</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END HETFO 3 -->
+            <!-- DAY KEDD 3-->
+            <div class="main_container_day bgc k-3   ">
+                <div class="time">--</div>
+                <div class="type-yoga">--</div>
+                <div class="style">--</div>
+                <div class="tipe">--<br> --</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">--</p>
+                    </div>
+                </div>
+            </div>
+            <!-- DAY END KEDD 3 -->
+            <!-- DAY SZERDA 3-->
+            <div class="main_container_day sz-3">
+                <div class="time">18:30</div>
+                <div class="type-yoga">Kezdő</div>
+                <div class="style"> 90 perc</div>
+                <div class="tipe">Power<br>Jóga<br></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">Melinda</p>
+                    </div>
+                </div>
+                </div>  
+                <!-- DAY SZERDA END 3-->
+               <!-- DAY CSÜT 3-->
+               <div class="main_container_day cs-3 bgc   ">
+                <div class="time">18:00</div>
+                <div class="type-yoga">Páros oktatós/Haladó </div>
+                <div class="style"> 90 perc</div>
+                <div class="tipe">Ashtanga I. <br><br></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/detti.png" width="50px" height="50px" alt="Kulacsik bernadett Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Detti</p>
+                    </div>
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/tomi.png" width="50px" height="50px" alt="Kulacsik Tamás Devá Yoga studio oktatója">
+                        <p class="photo_photoBox_name">Tomi</p>
+                    </div>
+                </div>
+            </div> 
+            <!-- DAY CSÜT END 3 -->
+             <!-- DAY PÉNTEK 3-->
+             <div class="main_container_day p-3">
+                <div class="time">18:30</div>
+                <div class="type-yoga">Kezdő</div>
+                <div class="style">90 perc</div>
+                <div class="tipe">Gerincterápiás Jóga<br>Jóga nidrával<br></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/lilla.png" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">Lilla</p>
+                    </div>
+                </div>
+                </div>  
+                <!-- DAY PÉNTEK END 3-->
+                <!-- DAY SZOMBAT 3-->
+
+              <div class="main_container_day bgc szo-3">
+                <div class="time">--</div>
+                <div class="type-yoga">-</div>
+                <div class="style"> --</div>
+                <div class="tipe">--<br>--<br></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">--</p>
+                    </div>
+                </div>
+                </div>  
+            <!-- DAY SZOMBAT END 3-->
+            <!-- DAY VAS  3-->
+            <div class="main_container_day  v-3">
+                <div class="time">--</div>
+                <div class="type-yoga ">--</div>
+                <div class="style">--</div>
+                <div class="tipe">--<br>--</div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">--</p>
+                    </div>
+                </div>
+            </div>  
+                <!-- DAY VAS END  3-->
+    
+           <!-- DAY  HÉTFŐ 4 -->
+           <div class="main_container_day h-4">
+                
+            <div class="time">18:30</div>
+            <div class="type-yoga">Kezdő</div>
+            <div class="style">90 perc</div>
+            <div class="tipe">Ashtanga I. <br>Jóga</div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name mgb4rem ">Melinda</p>
+                    </div>
+            </div>
+        </div>
+        <!-- DAY END HÉTFŐ 4 -->
+         <!-- DAY KEDD 4-->
+         <div class="main_container_day k-4 bgc ">
+            <div class="time">--</div>
+            <div class="type-yoga">--</div>
+            <div class="style">--</div>
+            <div class="tipe">--<br> --</div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name">--</p>
+                </div>
+            </div>
+        </div>
+        <!-- DAY END KEDD 4 -->
+        <!-- DAY SZERDA 4-->
+        <div class="main_container_day sz-4">
+            <div class="time">--</div>
+            <div class="type-yoga">-</div>
+            <div class="style"> --</div>
+            <div class="tipe">--<br>--<br></div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name">--</p>
+                </div>
+            </div>
+            </div>  
+            <!-- DAY SZERDA END 4-->
+           <!-- DAY CSÜT 4-->
+           <div class="main_container_day bgc cs-4">
+            <div class="time">--</div>
+            <div class="type-yoga">-</div>
+            <div class="style"> --</div>
+            <div class="tipe">--<br>--<br></div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name">--</p>
+                </div>
+            </div>
+            </div>  
+        <!-- DAY CSÜT END 4 -->
+         <!-- DAY PÉNTEK 4-->
+         <div class="main_container_day  p-4">
+            <div class="time">--</div>
+            <div class="type-yoga">-</div>
+            <div class="style"> --</div>
+            <div class="tipe">--<br>--<br></div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name">--</p>
+                </div>
+            </div>
+            </div>  
+            <!-- DAY PÉNTEK 4 END -->
+            <!-- DAY SZOMBAT 4-->
+
+          <div class="main_container_day bgc szo-4">
+            <div class="time">--</div>
+            <div class="type-yoga">-</div>
+            <div class="style"> --</div>
+            <div class="tipe">--<br>--<br></div>
+            <div class="mandalaLogo">
+                <img src="/photos/orarend/mandala.svg" alt="#">
+            </div>
+            <div class="photo"> 
+                <div class="photo_photoBox">
+                    <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                    <p class="photo_photoBox_name">--</p>
+                </div>
+            </div>
+            </div>  
+        <!-- DAY SZOMBAT END 4-->
+              <!-- DAY VAS 4-->
+
+              <div class="main_container_day v-4">
+                <div class="time">--</div>
+                <div class="type-yoga">-</div>
+                <div class="style"> --</div>
+                <div class="tipe">--<br>--<br></div>
+                <div class="mandalaLogo">
+                    <img src="/photos/orarend/mandala.svg" alt="#">
+                </div>
+                <div class="photo"> 
+                    <div class="photo_photoBox">
+                        <img src="/photos/orarend/melinda.svg" width="50px" height="50px" alt="Szilvi">
+                        <p class="photo_photoBox_name">--</p>
+                    </div>
+                </div>
+                </div>  
+            <!-- DAY VAS END 4-->
+
+            <!-- DIV GRID CONTAINER END-->
+        </div>
+    </section>
+    <!-- ÓRARENND END -->
+    <div class="space"></div> 
+    <!-- CONTACT -->
+    <section  id='contact' class="contact">
+        <div class="vector-color-top"></div>
+        <div class="contact_mandala">
+            <img src="/photos/svg/mandala_white.svg" alt="mandala">
+        </div>
+        <div class="contact_mainHedTitle">
+            <h1 id="contact-us">LÉPJ VELÜNK<br>KAPCSOLATBA</h1>
+        </div>
+
+        <div class="contact_container">
+            
+            <div class="contact_container_detailes">
+
+                <div class="contact_container_detailes_phone">
+                <div class="contact_container_detailes_phone_imgbox"> <img src="/photos/svg/phone_white.svg" alt="telefon icon"></div>
+                <p x-ms-format-detection="none"  class="important_color_white contact_container_detailes_phone_number"> 0630 848 6484 <br>0620 926 8899</p>
+            </div>
+
+                <div class="contact_container_detailes_mail">
+                    <div class="contact_container_detailes_phone_imgbox"><img src="/photos/svg/mail.svg" alt="maiil icon"> </div>
+                    <p class="contact_container_detailes_phone_email">devayogastudio@gmail.com</p>
+                </div>
+
+                <div class="contact_container_detailes_pin">
+                    <div class="contact_container_detailes_phone_imgbox-pin">  <img src="/photos/svg/map-pin.svg" alt="pin icon"> </div>
+                    <p class="contact_container_detailes_phone_address">Tisza Lajos krt. 37 <br>6721, Szeged</p>
+                </div>
+            </div>
+            <!-- CONTACT-FORM -->
+            <div class="contact_container_form">
+
+                <form  method="post" action="mailer.php" class="form">
+
+                    <div class="form_group">
+                        <div id="name-eng" class="contact_name">Név</div>
+                        <input type="text" class="form_input"  name ="name" placeholder="tejles név" id="name" value="" required="">
+                        <label for="name"></label>
+                    </div>
+        
+                    <div class="form_group">
+                        <div id="email-eng" class="contact_name">E-mail</div>
+                        <input type="email" name="email" class="form_input"  placeholder="email cím" id="email" value="" required="">
+                        <label for="email"></label>
+                    </div>
+
+                    <div class="form_group">
+                        <div id="phone-eng" class="contact_name">Telefonszám</div>
+                        <input type="number" name="phone" class="form_input" placeholder="telefonszám" id="phone" value="" required="">
+                        <label for="phone"></label>
+                    </div>
+        
+                    <div class="form_group">
+                        <div id="message-eng" class="contact_name">Üzenet</div>
+                        <textarea type="message" name="message"class="form_text" placeholder="üzenet" id="message" required=""></textarea>
+                        <label for="message"></label>
+                    </div>
+        
+                    <div class="submit_button">
+                        <input id="send-eng" type="submit" value="KÜLDÉS" class="btn_submit">
+                            <!-- Google reCAPTCHA box -->
+                            <div class="captcha">
+                                <div class="g-recaptcha" data-sitekey="6LcFxHwdAAAAAHYhPAUnXAqyeutGbST1hk65XlCQ" data-callback="removeFakeCaptcha"></div>
+                                <input type="checkbox" name="recaptcha" class="captcha-fake-field" tabindex="-1" required>
+                                <label for="recaptcha"></label>
+                            </div>
+                    </div>
+                    
+                </form> 
+            </div>
+            <!-- CONTACT-FORM END -->
+        </div>
+        <div class="vector-color-bottom"></div>
+    </section>
+    <!-- CONTACT END-->
+    <!-- SCROLL UP-->
+    <button class="btn scrollToTopBtn"></button>
+    <!-- SCROLL UP END-->
+    <!-- MAP -->
+    <section class="map">
+        <div id="map"></div>
+    </section>
+
+    <!-- MAP END -->
+    <!-- SCRIPTS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6zXJHEcQweZvk5BGPP8NMjmL8bgSLuY&map_ids=dc748274853a2ec0&callback=initMap"> </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+    <!-- SCRIPTS END-->
+</body>
+</html>

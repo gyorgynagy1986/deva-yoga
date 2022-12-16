@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+		<url>
+			<loc>https://devayoga.hu/</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/index.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/jogafotok.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/orarend.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+		
+		<url>
+			<loc>https://devayoga.hu/jogaszemleletunk.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/joga-hazirend.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/arlista.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/jogaoktato-kepzes.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/vinyasa.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/hathaflow.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/gerincterapiasjoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/babamamajoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/illateszencias-hatha-joga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/yinjoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/kismamajoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/seniorjoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://devayoga.hu/oratipusok/egyenijoga.php</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://devayoga.hu/#contact</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+
+		<url>
+			<loc>http://devayoga.hu/cdn-cgi/l/email-protection</loc>
+			<changefreq>weekly</changefreq>
+		</url>
+	</urlset>
+
