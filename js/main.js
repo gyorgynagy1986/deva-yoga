@@ -84,7 +84,7 @@ window.removeFakeCaptcha = function() {
 
 // ALERT! 
 
-if (navigator.language !== 'en-US' ) {
+
 
   if(document.URL === 'https://devayoga.hu/' || document.URL === 'https://devayoga.hu/index.php' || document.URL === 'http://127.0.0.1:5501/' || document.URL === 'http://127.0.0.1:5501/index.html') {
   
@@ -111,9 +111,7 @@ if (navigator.language !== 'en-US' ) {
   })
 } 
 
-} else {
-  console.log('hello from scroll');
-  } 
+
 
 
 
