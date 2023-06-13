@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jógafotóink bemutatják a jógatermünket és az ott tartott órákat, inspirációul szolgálva az érdeklődőknek.">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"/>
@@ -62,6 +63,7 @@
             <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
             <ul>
                 <li><a href="index.php">HOME</a></li>
+                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
                 <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
                 <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
                 <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
@@ -113,6 +115,20 @@
                <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
                 <p class="galleryName">Illatesszencia</p>
                 <p class="galleryPhotoNumber">(6 kép)</p>
+            </div>
+
+            <div class="gallery_container_photoBox">
+                <a href="#popup5"><div class="photo elet"></div></a>
+               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+                <p class="galleryName">Életképek</p>
+                <p class="galleryPhotoNumber">(3 kép)</p>
+            </div>
+
+            <div class="gallery_container_photoBox">
+                <a href="#popup6"><div class="photo sokszinu"></div></a>
+               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+                <p class="galleryName">A jóga sokszínű</p>
+                <p class="galleryPhotoNumber">(2 kép)</p>
             </div>
 
         </div>
@@ -180,7 +196,11 @@
                         <textarea type="message" name="message"class="form_text" placeholder="üzenet" id="message" required=""></textarea>
                         <label for="message"></label>
                     </div>
-        
+                    <div style="display: flex; margin-top: 20px;" class="policy-input">
+                        <input style="margin-right: 10px; width: 25px;" type="checkbox" name="policy" class="policy-cbox" id="policy" required>
+                        <label style="font-size: 15px; font-family: roboto; color: aliceblue;" for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a style="text-decoration: underline; font-weight: bold; color: black;" href="/adatvedelem.html">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
+                        </label> 
+                    </div>
                     <div class="submit_button">
                         <input id="send-eng" type="submit" value="KÜLDÉS" class="btn_submit">
                             <!-- Google reCAPTCHA box -->
@@ -328,6 +348,62 @@
         </div>
     </div>
     <!-- POP UP GALLERY 4 END-->
+    <!-- POP UP GALLERY 5 -->
+    <div class="popup" id="popup5">       
+        <div class="popup_element">
+        <div class="close"><a href="#gallery">&#10006;</a></div>            
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img src="/photos/gallery/életkép/1.jpg" alt="devá jóga photo galéria fotója"  class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/életkép/2.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/életkép/3.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </div>
+    <!-- POP UP GALLERY 5 END-->
+     <!-- POP UP GALLERY 6 -->
+     <div class="popup" id="popup6">       
+        <div class="popup_element">
+        <div class="close"><a href="#gallery">&#10006;</a></div>            
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img src="/photos/gallery/sokszinu/1.jpg" alt="devá jóga photo galéria fotója"  class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/sokszinu/2.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p class="stb">
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+        </div>
+    </footer>
+    <!-- POP UP GALLERY 6 END-->
     <!-- SCRIPTS -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6zXJHEcQweZvk5BGPP8NMjmL8bgSLuY&map_ids=dc748274853a2ec0&callback=initMap"> </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>

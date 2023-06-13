@@ -32,9 +32,9 @@
   // MAIN HEADER START
   
   const contentMainPageEng = ['Anyone who starts practicing yoga with any goal,  will be enriched with a treasure of great value. Come and be with us through yoga in our yoga studio in Szeged.'];
-  const contentMainPageHu = ['Bárki bármilyen céllal kezdi is el a jóga gyakorlását, mindenképp komoly értéket hordzó kinccsel lesz gazdagabb. Gyere és kapcsolódj velünk a jógán keresztül szegedi jógastúdiónkban.'];
-  const btnmainHeader = ['YOGA CAMP 2023'];
-  const btnmainHeaderHu = ['JÓGATÁBOR 2023'];
+  const contentMainPageHu = ['Bárki bármilyen céllal kezdi is el a jóga gyakorlását, mindenképp komoly értéket hordozó kinccsel lesz gazdagabb. Gyere és kapcsolódj velünk a jógán keresztül szegedi jógastúdiónkban.'];
+  const btnmainHeader = ['YOGA CLASS BOOKING'];
+  const btnmainHeaderHu = ['ONLINE BEJELENTKEZÉS'];
 
   // SECTION 1 
   

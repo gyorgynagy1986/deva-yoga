@@ -59,6 +59,7 @@
             <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
             <ul>
                 <li><a href="index.php">HOME</a></li>
+                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
                 <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
                 <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
                 <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
@@ -194,6 +195,11 @@
                         <textarea type="message" name="message"class="form_text" placeholder="üzenet" id="message" required=""></textarea>
                         <label for="message"></label>
                     </div>
+                    <div style="display: flex; margin-top: 20px;" class="policy-input">
+                        <input style="margin-right: 10px; width: 25px;" type="checkbox" name="policy" class="policy-cbox" id="policy" required>
+                        <label style="font-size: 15px; font-family: roboto; color: aliceblue;" for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a style="text-decoration: underline; font-weight: bold; color: black;" href="/adatvedelem.html">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
+                        </label> 
+                    </div>
         
                     <div class="submit_button">
                         <input id="send-eng" type="submit" value="KÜLDÉS" class="btn_submit">
@@ -219,7 +225,12 @@
     <section class="map">
         <div id="map"></div>
     </section>
-
+    <footer>
+        <div class="footer">
+            <p class="stb">
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+        </div>
+    </footer>
     <!-- MAP END -->
     <!-- SCRIPTS -->
     <script  

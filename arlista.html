@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Devá Yoga Studio árlistája."></head>
+    <meta name="description" content="A Devá Yoga Studio változatos árlistát kínál, többféle alkalmas és bérlet opcióval, valamint kismama és baba-mama jógával. Az árak változóak, így érdemes közvetlenül a stúdióval egyeztetni az aktuális árakról és ajánlatokról.">
     <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
@@ -60,6 +60,7 @@
             <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
             <ul>
                 <li><a href="index.php">HOME</a></li>
+                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
                 <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
                 <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
                 <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
@@ -75,7 +76,9 @@
 
     <!-- ÓRARENND -->
     <section class="main arlista ">
-       
+        <div class="gallery_mandala">
+            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+        </div>
         <div class="main_mainHedTitle mtop6">
             <h1 id="price-list">ÁRLISTA</h1>
         </div>
@@ -183,7 +186,11 @@
                         <textarea type="message" name="message"class="form_text" placeholder="üzenet" id="message" required=""></textarea>
                         <label for="message"></label>
                     </div>
-        
+                    <div style="display: flex; margin-top: 20px;" class="policy-input">
+                        <input style="margin-right: 10px; width: 25px;" type="checkbox" name="policy" class="policy-cbox" id="policy" required>
+                        <label style="font-size: 15px; font-family: roboto; color: aliceblue;" for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a style="text-decoration: underline; font-weight: bold; color: black;" href="/adatvedelem.html">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
+                        </label> 
+                    </div>
                     <div class="submit_button">
                         <input id="send-eng" type="submit" value="KÜLDÉS" class="btn_submit">
                             <!-- Google reCAPTCHA box -->
@@ -208,7 +215,12 @@
     <section class="map">
         <div id="map"></div>
     </section>
-
+    <footer>
+        <div class="footer">
+            <p class="stb">
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+        </div>
+    </footer>
     <!-- MAP END -->
     <!-- SCRIPTS -->
     <script  
