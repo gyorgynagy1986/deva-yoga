@@ -1,0 +1,8 @@
+
+
+@media screen and (max-width: 600px) {
+    .h1Heigpref {
+        font-size: 4rem !important;
+        line-height: 49px !important;
+    }
+} 
