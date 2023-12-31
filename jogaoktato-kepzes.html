@@ -1,171 +1,375 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fedezd fel a Hatha Jóga oktatásának művészetét és elméletét! Tanulj tapasztalt oktatóktól és szerezz hatha jóga oktatói képesítést az oldalunkon elérhető képzéssel.">
-    <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-    <link  rel="stylesheet" href="css/style.css">
-    <link  rel="stylesheet" href="css/prefixes.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fedezd fel a Hatha Jóga oktatásának művészetét és elméletét! Tanulj tapasztalt oktatóktól és szerezz hatha jóga oktatói képesítést az oldalunkon elérhető képzéssel."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/prefixes.css" />
+    <script defer src="js/nav.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/languageChange.js"></script>
-    <script  src="js/map.js"></script>
+    <script src="js/map.js"></script>
     <title>Jógaoktató képzés &mdash; Devá Jóga Stúdió</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <!-- HEADER -->
     <header class="header">
-        <nav class="header_nav">
-            
-            <div class="header_nav_container">
-                <!-- MOBILE HAMI -->
-                <div class="mobile-menu-hambi">
-                    <div class="mobile-menu-hambi-1"></div>
-                    <div class="mobile-menu-hambi-2"></div>
-                    <div class="mobile-menu-hambi-3"></div>
-                </div>
-                <div class="mobile-menu-hambi-close">
-                    <div class="mobile-menu-hambi-close-1"></div>
-                    <div class="mobile-menu-hambi-close-2"></div>
-                </div>
-                <!-- MOBILE HAMI END-->
-                <div class="header_nav_container_logo">
-                    <img  src="/photos/svg/dy_small.svg" alt="szeged jóga stúdió logója">
-                </div>
-                
-                <ul class="header_nav_container_ul">
-                    <li ><a href="index.php">HOME</span></li>
-                    <li ><a id="nav-2" href="jogafotok.php">GALÉRIA</a></li>
-                    <li ><a id="nav-3" href="orarend.php">ÓRAREND</a></li>
-                    <li ><a id="nav-4" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                    <li ><a id="nav-5" href="joga-hazirend.php">HÁZIREND</a></li>
-                    <li ><a id="nav-6" href="arlista.php">ÁRLISTA</a></li>
-                    <li ><a id="nav-7" href="jogaoktato-kepzes.php"><span class="btn_home">JÓGAOKTATÓ KÉPZÉS</span></a></li>
-                    <li ><a id="nav-8" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-                    <li id="nav-9" onClick="document.getElementById('contact').scrollIntoView();" class="btn_nav">kapcsolat</li>
-                </ul>
-                <!-- NAV SOCIAL MEDIA -->
-                <div class="header_nav_container_social">
-                    <img id="hu" class="hidden" src="/photos/svg/hu.svg" width="34px" height="34px"  alt="deva yoga nyelv HUNGARY">
-                    <img id="eng" src="/photos/svg/eng.svg" width="34px" height="34px"  alt="ENGLISH LANGUAGE DEVA YOGA">
-                  <a href="https://www.instagram.com/devayoga_studio/"><img  src="/photos/social/instagram.svg" alt="devá yoga stúdio instragram elérhetőség"></a>
-                  <a href="https://www.facebook.com/devayogastudio"> <img src="/photos/social/facebook.svg" alt="devá yoga stúdio facebook elérhetőség"></a></a> 
-                </div>
-                <!-- NAV SOCIAL MEDIA END -->
-            </div>
-        </nav>
-        <!-- MOBIL MENU-->
-        <div class="mobile-menu">
-            <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
-                <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
-                <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
-                <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                <li><a class="mobile-rule" href="joga-hazirend.php">HÁZIREND</a></li>
-                <li><a class="mobile-prices" href="arlista.php">ÁRLISTA</a></li>
-                <li><a class="mobile-traning" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                <li><a class="mobile-type" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-            </ul>
+      <nav class="header_nav">
+        <div class="header_nav_container">
+          <!-- MOBILE HAMI -->
+          <div class="mobile-menu-hambi">
+            <div class="mobile-menu-hambi-1"></div>
+            <div class="mobile-menu-hambi-2"></div>
+            <div class="mobile-menu-hambi-3"></div>
+          </div>
+          <div class="mobile-menu-hambi-close">
+            <div class="mobile-menu-hambi-close-1"></div>
+            <div class="mobile-menu-hambi-close-2"></div>
+          </div>
+          <!-- MOBILE HAMI END-->
+          <div class="header_nav_container_logo">
+            <img
+              src="/photos/svg/dysmall.svg"
+              alt="szeged jóga stúdió logója"
+            />
+          </div>
+
+          <ul class="header_nav_container_ul"></ul>
+          <!-- NAV SOCIAL MEDIA -->
+          <div class="header_nav_container_social">
+            <img
+              id="hu"
+              class="hidden"
+              src="/photos/svg/hu.svg"
+              width="34px"
+              height="34px"
+              alt="deva yoga nyelv HUNGARY"
+            />
+            <img
+              id="eng"
+              src="/photos/svg/eng.svg"
+              width="34px"
+              height="34px"
+              alt="ENGLISH LANGUAGE DEVA YOGA"
+            />
+            <a href="https://www.instagram.com/devayoga_studio/"
+              ><img
+                src="/photos/social/instagram.svg"
+                alt="devá yoga stúdio instragram elérhetőség"
+            /></a>
+            <a href="https://www.facebook.com/devayogastudio">
+              <img
+                src="/photos/social/facebook.svg"
+                alt="devá yoga stúdio facebook elérhetőség"
+            /></a>
+          </div>
+          <!-- NAV SOCIAL MEDIA END -->
         </div>
-    <!-- MOBILE END -->
+      </nav>
+      <!-- MOBIL MENU-->
+      <div class="mobile-menu">
+        <img
+          src="/photos/homepage/hero_main.png"
+          alt="szeged jóga stúdió logója"
+        />
+        <ul id="mobile-menu"></ul>
+      </div>
+      <!-- MOBILE END -->
     </header>
     <!-- HEADER  END-->
 
     <!-- ÓRARENND -->
     <section class="main jogatanfolyam">
-        <div class="gallery_mandala">
-            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+      <div class="gallery_mandala">
+        <img src="/photos/svg/devalogo.svg" alt="mandala" />
+      </div>
+      <div class="main_mainHedTitle mtop6" style="margin-bottom: 30px">
+        <h1 style="text-align: center" class="h1Heigpref class-center-kepzes">
+          Kedves leendő Jógatanárok!
+        </h1>
+      </div>
+
+      <div class="oktatok_container-grid_col-2">
+        <div class="cursor-pointer kepzes-container textbox m-w30">
+          <div class="textbox-kepzes">
+            <img
+              src="/photos/balaton/cover1.jpg"
+              width="50"
+              height="50"
+              loading="lazy"
+              alt="#"
+            />
+          </div>
+          <div>
+            <h2 class="kepzes-h1">Női Jógaoktató Képzés – elvonulásban</h2>
+            <p class="p-kepzes">
+              Szeretettel várunk a 2024-es Női jogaoktató képzésünkre, mely
+              Személyes oktatásban – elvonulásban kerül megszervezésre.
+            </p>
+          </div>
+          <div class="kepzes-btn-container">
+            <button
+              onclick="window.location.href = 'https://devayoga.hu/noi-jogaoktato-kepzes-balaton.html'; return false;"
+              class="btn-kepzes"
+            >
+              információ és jelentkezés
+            </button>
+          </div>
         </div>
-        <div class="main_mainHedTitle mtop6" style="margin-bottom: 30px;">
-            <h1 class="h1Heigpref">Kedves leendő Jógatanárok!
-            </h1>
+
+        <div
+          style="opacity: 0.2"
+          class="cursor-pointer kepzes-container textbox m-w30"
+        >
+          <div class="textbox-kepzes">
+            <img
+              src="/photos/jogakepzes/headers/2.jpg"
+              width="50"
+              height="50"
+              loading="lazy"
+              alt="#"
+            />
+          </div>
+          <div>
+            <h2 class="kepzes-h1">Női Jógaoktató Képzés</h2>
+            <p class="p-kepzes">
+              2023 szeptemberében indul a 100 órás Női Jógaoktató Képzés, mely a
+              Yoga Alliance International által regisztrált oklevelet ad a
+              sikeres vizsga elvégzése után.Jelentkezés és bővebb információ
+            </p>
+          </div>
+          <div class="kepzes-btn-container">
+            <button
+              onclick="window.location.href = 'https://devayoga.hu/noi-jogaoktato-kepzes-szeged.html'; return false;"
+              class="btn-kepzes"
+            >
+              JELENTKEZÉS LEZÁRULT
+            </button>
+          </div>
         </div>
-        <p class="studio_container_textBox-text" style="font-size: 24px; margin-bottom: 20px;"> <b>2023 szeptemberében indul a 
-            100 órás Női Jógaoktató Képzés</b>, mely a Yoga Alliance International által regisztrált oklevelet ad a sikeres vizsga elvégzése után.<a href="noi-jogaoktato-kepzes-szeged.html">Jelentkezés és bővebb információ, itt</a> </p>
-        <p class="studio_container_textBox-text" style="font-size: 24px;">A 2024 januári 200 órás hatha jógaoktató képzésünkről hamarosan tájékoztatunk titeket. <a href="jogaoktato-kepzes-reszletes-tajekoztatas.html">A képzés felépítéséről itt találhattok bővebb információt! </a> </p>            
+
+        <div class="cursor-pointer kepzes-container textbox m-w30">
+          <div class="textbox-kepzes">
+            <img
+              src="/photos/jogakepzes/headers/1.jpg"
+              width="50"
+              height="50"
+              loading="lazy"
+              alt="#"
+            />
+          </div>
+          <div>
+            <h2 class="kepzes-h1">Hatha jógaoktató képzés</h2>
+            <p class="p-kepzes">
+              Elindítottuk a jelentkezést, a 2024 januárjában induló, 200 órás
+              hatha jóga oktatóképzésünkre!
+            </p>
+          </div>
+          <div class="kepzes-btn-container">
+            <button
+              onclick="window.location.href = 'https://devayoga.hu/jogaoktato-kepzes-reszletes-tajekoztatas.html'; return false;"
+              class="btn-kepzes"
+            >
+              információ és jelentkezés
+            </button>
+          </div>
+        </div>
+
+        <div class="cursor-pointer kepzes-container textbox m-w30">
+          <div class="textbox-kepzes">
+            <img
+              src="/photos/jogakepzes/headers/3.jpg"
+              width="50"
+              height="50"
+              loading="lazy"
+              alt="#"
+            />
+          </div>
+          <div>
+            <h2 class="kepzes-h1">Gyerekjóga oktató képzés</h2>
+            <p class="p-kepzes">
+              Szeretettel várunk a gyerekjóga oktató képzésen, ha szeretnél
+              segíteni a gyermekeknek, hogy a jóga eszköztárával, mozgással és
+              játszva induljanak el a harmonikus felnőttkor felé.
+            </p>
+          </div>
+          <div class="kepzes-btn-container">
+            <button
+              onclick="window.location.href = 'https://devayoga.hu/gyerek-jogaoktato-kepzes-szeged.html'; return false;"
+              class="btn-kepzes"
+            >
+              információ és jelentkezés
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ÓRARENND END -->
-    <div class="space"></div> 
+    <div class="space"></div>
     <!-- CONTACT -->
-    <section id='contact' class="contact">
-        <div class="vector-color-top"></div>
-        <div class="contact_mandala">
-            <img src="/photos/svg/mandala_white.svg" alt="mandala">
-        </div>
-        <div class="contact_mainHedTitle">
-            <h1 id="contact-us">LÉPJ VELÜNK<br>KAPCSOLATBA</h1>
-        </div>
+    <section id="contact" class="contact">
+      <div class="vector-color-top"></div>
+      <div class="contact_mandala">
+        <img src="/photos/svg/devalogowhite.svg" alt="mandala" />
+      </div>
+      <div class="contact_mainHedTitle">
+        <h1 id="contact-us">LÉPJ VELÜNK<br />KAPCSOLATBA</h1>
+      </div>
 
-        <div class="contact_container">
-            
-            <div class="contact_container_detailes">
+      <div class="contact_container">
+        <div class="contact_container_detailes">
+          <div class="contact_container_detailes_phone">
+            <div class="contact_container_detailes_phone_imgbox">
+              <img src="/photos/svg/phone_white.svg" alt="telefon icon" />
+            </div>
+            <p
+              x-ms-format-detection="none"
+              class="important_color_white contact_container_detailes_phone_number"
+            >
+              0630 848 6484 <br />0620 926 8899
+            </p>
+          </div>
 
-                <div class="contact_container_detailes_phone">
-                <div class="contact_container_detailes_phone_imgbox"> <img src="/photos/svg/phone_white.svg" alt="telefon icon"></div>
-                <p x-ms-format-detection="none"  class="important_color_white contact_container_detailes_phone_number"> 0630 848 6484 <br>0620 926 8899</p>
+          <div class="contact_container_detailes_mail">
+            <div class="contact_container_detailes_phone_imgbox">
+              <img src="/photos/svg/mail.svg" alt="maiil icon" />
+            </div>
+            <p class="contact_container_detailes_phone_email">
+              devayogastudio@gmail.com
+            </p>
+          </div>
+
+          <div class="contact_container_detailes_pin">
+            <div class="contact_container_detailes_phone_imgbox-pin">
+              <img src="/photos/svg/map-pin.svg" alt="pin icon" />
+            </div>
+            <p class="contact_container_detailes_phone_address">
+              Tisza Lajos krt. 37 <br />6721, Szeged
+            </p>
+          </div>
+        </div>
+        <!-- CONTACT-FORM -->
+        <div class="contact_container_form">
+          <form method="post" action="mailer.php" class="form">
+            <div class="form_group">
+              <div id="name-eng" class="contact_name">Név</div>
+              <input
+                type="text"
+                class="form_input"
+                name="name"
+                placeholder="tejles név"
+                id="name"
+                value=""
+                required=""
+              />
+              <label for="name"></label>
             </div>
 
-                <div class="contact_container_detailes_mail">
-                    <div class="contact_container_detailes_phone_imgbox"><img src="/photos/svg/mail.svg" alt="maiil icon"> </div>
-                    <p class="contact_container_detailes_phone_email">devayogastudio@gmail.com</p>
-                </div>
-
-                <div class="contact_container_detailes_pin">
-                    <div class="contact_container_detailes_phone_imgbox-pin">  <img src="/photos/svg/map-pin.svg" alt="pin icon"> </div>
-                    <p class="contact_container_detailes_phone_address">Tisza Lajos krt. 37 <br>6721, Szeged</p>
-                </div>
+            <div class="form_group">
+              <div id="email-eng" class="contact_name">E-mail</div>
+              <input
+                type="email"
+                name="email"
+                class="form_input"
+                placeholder="email cím"
+                id="email"
+                value=""
+                required=""
+              />
+              <label for="email"></label>
             </div>
-            <!-- CONTACT-FORM -->
-            <div class="contact_container_form">
 
-                <form  method="post" action="mailer.php" class="form">
-
-                    <div class="form_group">
-                        <div id="name-eng" class="contact_name">Név</div>
-                        <input type="text" class="form_input"  name ="name" placeholder="tejles név" id="name" value="" required="">
-                        <label for="name"></label>
-                    </div>
-        
-                    <div class="form_group">
-                        <div id="email-eng" class="contact_name">E-mail</div>
-                        <input type="email" name="email" class="form_input"  placeholder="email cím" id="email" value="" required="">
-                        <label for="email"></label>
-                    </div>
-
-                    <div class="form_group">
-                        <div id="phone-eng" class="contact_name">Telefonszám</div>
-                        <input type="number" name="phone" class="form_input" placeholder="telefonszám" id="phone" value="" required="">
-                        <label for="phone"></label>
-                    </div>
-        
-                    <div class="form_group">
-                        <div id="message-eng" class="contact_name">Üzenet</div>
-                        <textarea type="message" name="message"class="form_text" placeholder="üzenet" id="message" required=""></textarea>
-                        <label for="message"></label>
-                    </div>
-                    <div style="display: flex; margin-top: 20px;" class="policy-input">
-                        <input style="margin-right: 10px; width: 25px;" type="checkbox" name="policy" class="policy-cbox" id="policy" required>
-                        <label style="font-size: 15px; font-family: roboto; color: aliceblue;" for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a style="text-decoration: underline; font-weight: bold; color: black;" href="/adatvedelem.html">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
-                        </label> 
-                    </div>
-                    <div class="submit_button">
-                        <input id="send-eng" type="submit" value="KÜLDÉS" class="btn_submit">
-                            <!-- Google reCAPTCHA box -->
-                            <div class="captcha">
-                                <div class="g-recaptcha" data-sitekey="6LcFxHwdAAAAAHYhPAUnXAqyeutGbST1hk65XlCQ" data-callback="removeFakeCaptcha"></div>
-                                <input type="checkbox" name="recaptcha" class="captcha-fake-field" tabindex="-1" required>
-                                <label for="recaptcha"></label>
-                            </div>
-                    </div>
-                    
-                </form> 
+            <div class="form_group">
+              <div id="phone-eng" class="contact_name">Telefonszám</div>
+              <input
+                type="number"
+                name="phone"
+                class="form_input"
+                placeholder="telefonszám"
+                id="phone"
+                value=""
+                required=""
+              />
+              <label for="phone"></label>
             </div>
-            <!-- CONTACT-FORM END -->
+
+            <div class="form_group">
+              <div id="message-eng" class="contact_name">Üzenet</div>
+              <textarea
+                type="message"
+                name="message"
+                class="form_text"
+                placeholder="üzenet"
+                id="message"
+                required=""
+              ></textarea>
+              <label for="message"></label>
+            </div>
+            <div style="display: flex; margin-top: 20px" class="policy-input">
+              <input
+                style="margin-right: 10px; width: 25px"
+                type="checkbox"
+                name="policy"
+                class="policy-cbox"
+                id="policy"
+                required
+              />
+              <label
+                style="font-size: 15px; font-family: roboto; color: aliceblue"
+                for="policy"
+                class="policy-input"
+              >
+                <p>
+                  Hozzájárulok adataim kezeléséhez az &nbsp;<a
+                    style="
+                      text-decoration: underline;
+                      font-weight: bold;
+                      color: black;
+                    "
+                    href="/adatvedelem.html"
+                    >adatvédelmi szabályzat</a
+                  >&nbsp;alapján.
+                </p>
+              </label>
+            </div>
+            <div class="submit_button">
+              <input
+                id="send-eng"
+                type="submit"
+                value="KÜLDÉS"
+                class="btn_submit"
+              />
+              <!-- Google reCAPTCHA box -->
+              <div class="captcha">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LcFxHwdAAAAAHYhPAUnXAqyeutGbST1hk65XlCQ"
+                  data-callback="removeFakeCaptcha"
+                ></div>
+                <input
+                  type="checkbox"
+                  name="recaptcha"
+                  class="captcha-fake-field"
+                  tabindex="-1"
+                  required
+                />
+                <label for="recaptcha"></label>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="vector-color-bottom"></div>
+        <!-- CONTACT-FORM END -->
+      </div>
+      <div class="vector-color-bottom"></div>
     </section>
     <!-- CONTACT END-->
     <!-- SCROLL UP-->
@@ -173,20 +377,23 @@
     <!-- SCROLL UP END-->
     <!-- MAP -->
     <section class="map">
-        <div id="map"></div>
+      <div id="map"></div>
     </section>
     <footer>
-        <div class="footer">
-            <p class="stb">
-                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
-        </div>
+      <div class="footer">
+        <p class="stb">
+          Copyright 2023 © devayoga.hu |
+          <a class="stb" href="https://studiobromo.hu/"
+            >Weboldalt készítette és üzemelteti: Studio Bromo</a
+          >
+        </p>
+      </div>
     </footer>
     <!-- MAP END -->
     <!-- SCRIPTS -->
-    <script  
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6zXJHEcQweZvk5BGPP8NMjmL8bgSLuY&map_ids=dc748274853a2ec0&callback=initMap"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW6zXJHEcQweZvk5BGPP8NMjmL8bgSLuY&map_ids=dc748274853a2ec0&callback=initMap"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+
     <!-- SCRIPTS END-->
-</body>
+  </body>
 </html>

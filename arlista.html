@@ -7,6 +7,7 @@
     <meta name="description" content="A Devá Yoga Studio változatos árlistát kínál, többféle alkalmas és bérlet opcióval, valamint kismama és baba-mama jógával. Az árak változóak, így érdemes közvetlenül a stúdióval egyeztetni az aktuális árakról és ajánlatokról.">
     <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="css/style.css">
+    <script defer src="js/nav.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/languageChange.js"> </script>
     <script  src="js/map.js"></script>
@@ -30,19 +31,11 @@
                 </div>
                 <!-- MOBILE HAMI END-->
                 <div class="header_nav_container_logo">
-                    <img  src="/photos/svg/dy_small.svg" alt="szeged jóga stúdió logója">
+                    <img  src="/photos/svg/dysmall.svg" alt="szeged jóga stúdió logója">
                 </div>
                 
                 <ul class="header_nav_container_ul">
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a id="nav-2" href="jogafotok.php">GALÉRIA</a></li>
-                    <li><a id="nav-3" href="orarend.php">ÓRAREND</a></li>
-                    <li><a id="nav-4" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                    <li><a id="nav-5" href="joga-hazirend.php">HÁZIREND</a></li>
-                    <li><a id="nav-6" href="arlista.php"><span class="btn_home">ÁRLISTA</span></a></li>
-                    <li><a id="nav-7" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                    <li><a id="nav-8" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-                    <li id="nav-9" onClick="document.getElementById('contact').scrollIntoView();" class="btn_nav">kapcsolat</li>
+                    
                 </ul>
                 <!-- NAV SOCIAL MEDIA -->
                 <div class="header_nav_container_social">
@@ -57,18 +50,8 @@
         </nav>
         <!-- MOBIL MENU-->
         <div class="mobile-menu">
-            <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
-                <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
-                <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
-                <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                <li><a class="mobile-rule" href="joga-hazirend.php">HÁZIREND</a></li>
-                <li><a class="mobile-prices" href="arlista.php">ÁRLISTA</a></li>
-                <li><a class="mobile-traning" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                <li><a class="mobile-type" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-            </ul>
+            <img src="/photos/homepage/hero_main.png" alt="szeged jóga stúdió logója">
+            <ul id="mobile-menu"></ul>
         </div>
     <!-- MOBILE END -->
     </header>
@@ -77,54 +60,183 @@
     <!-- ÓRARENND -->
     <section class="main arlista ">
         <div class="gallery_mandala">
-            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+            <img src="/photos/svg/devalogo.svg" alt="mandala">
         </div>
         <div class="main_mainHedTitle mtop6">
             <h1 id="price-list">ÁRLISTA</h1>
         </div>
-        <div  class="text-center"> <h2>Érvényes 2023.01.02-től visszavonásig.</h2>
+        <div  class="text-center"> <h2>Érvényes 2023.08.21-től visszavonásig.</h2>
         </div>
 
+    <div class="price-table-container">
+        <div class="price-table">
+            <h1>Devá Árlista</h1>
+            <table>
+              <tr>
+                <th>Szolgáltatás</th>
+                <th>Időtartam</th>
+                <th>Ár</th>
+              </tr>
+              <!-- Repeat the following row structure for each service -->
+              <tr>
+                <td>Alkalom</td>
+                <td>90 perc</td>
+                <td>2500 Ft</td>
+              </tr>
 
-        <div class="arlista-container">
+              <tr>
+                <td>Tini alkalom</td>
+                <td>60 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>10 alkalmas bérlet</td>
+                <td>90 perc</td>
+                <td>21.800 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Tini 10 alkalmas bérlet</td>
+                <td>60 perc</td>
+                <td>17.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Egyéni jógaterápia</td>
+                <td>60 perc</td>
+                <td>8000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Egyéni jógaterápia</td>
+                <td>90 perc</td>
+                <td>12.000 Ft</td>
+              </tr>
+
+              <!-- Repeat for other services -->
+            </table>
+            <p class="note">
+             <b> Kuponkártya:</b> 10 alkalom ajándék jógaóra. A kártyát kérd a pultnál.
+            </p>
+            <p class="note">
+                <b> Érvényesség:</b> A bérletek érvényességi ideje 3 hónap.
+            </p>
+            <p class="note">
+                <b> Tini jóga:</b> Középiskolás diákok részére (16-20 éves korig)
+
+            </p>
+          </div>
+
+          <div class="price-table">
+            <h1>Devá Kids Árlista</h1>
+            <table>
+              <tr>
+                <th>Szolgáltatás</th>
+                <th>Időtartam</th>
+                <th>Ár</th>
+              </tr>
+              <!-- Repeat the following row structure for each service -->
+              <tr>
+                <td>Sulis gyermekjóga</td>
+                <td>60 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Sulis gyermekjóga bérlet 6 alkalom</td>
+                <td>60 perc</td>
+                <td>10.500 ft</td>
+              </tr>
+
+              <tr>
+                <td>Sportrehabilitációs és prevenció jellegű jóga</td>
+                <td>60 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+             
+              <tr>
+                <td>Sportrehabilitációs és prevenció jellegű jóga bérlet 6 alkalmas</td>
+                <td>60 perc</td>
+                <td>10.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Ovis gyermekjóga</td>
+                <td>30 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Ovis gyermekjóga bérlet 6 alkalmas</td>
+                <td>60 perc</td>
+                <td>10.500 Ft</td>
+              </tr>
+             
+              <tr>
+                <td>Mini tini jóga</td>
+                <td>60 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Mini tini jóga bérlet 6 alkalmas</td>
+                <td>60 perc</td>
+                <td>10.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Baba-mama jóga</td>
+                <td>75 perc</td>
+                <td>2800 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Baba-mama jóga bérlet 6 alkalmas</td>
+                <td>75 perc</td>
+                <td>14.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Tipegő torna</td>
+                <td>60 perc</td>
+                <td>2000 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Tipegő torna bérlet 6 alkalmas</td>
+                <td>60 perc</td>
+                <td>10.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Kismama jóga </td>
+                <td>60 perc</td>
+                <td>2500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Kismama jóga Bérlet 10 alkalmas </td>
+                <td>60 perc</td>
+                <td>21.500 Ft</td>
+              </tr>
+
+              <tr>
+                <td>Kismama jóga </td>
+                <td>60 perc</td>
+                <td>2500 Ft</td>
+              </tr>
             
-            <div class="box-arlista">
-                <div>
-                    <p> Alkalom </p>
-                    <p> Tini alkalom </p>
-                    <p> 10 alkalmas bérlet</h2>
-                    <p> Tini 10 alkalmas bérlet</p>
-                    <p> Egyéni jógaterápia</p>
-                    <p> Kismama jóga</p>
-                    <p> Baba-Mama jóga</p>
-                </div>
-                
-            </div>
-            
-            <div class="box-arlista">
-                <div>
-                    <p> 2500 Ft (90 perces)</p>
-                    <p> 2000 Ft (60 perces)</p>
-                    <p> 21.800 Ft (90 perces)</p>
-                    <p> 17500 Ft (60 perces)</p>
-                    <p> 8000 Ft (60 perces)</p>
-                    <p> 2500 Ft (60 perces)</p>
-                    <p> 2800 Ft (90 perces)</p>
-                </div>
-               
-            </div>
-            
+              <!-- Repeat for other services -->
+            </table>
+            <p class="note">
+                <b> Baba-mama klub </b> 2000ft/alkalom 1 szülő+gyermek(ek) vagy 3000 ft/család (szülők és gyermekek 75 perc
+                Bérlet: 6 alkalom 10.500 ft
+            </p>
+          </div>
+
         </div>
-
-
-        <div class="arlista-line"></div>
-            
-        <div class="arlista-container-discount">
-            <p class="kupon"> <span>Tini jóga:</span> Kisdiákok részére, 60 perces csoportos (7-20 éves korig)</p> 
-            <p class="kupon"> <span>Kuponkártya:</span> 10 alkalom után a következő óra ajándék :) A kártyát kérd a pultnál.</p> 
-            <p class="kupon"> <span>Érvényesség:</span> A bérletek érvényességi ideje 3 hónap.</p>    
-        </div>
-    
 
     </section>
     <!-- ÓRARENND END -->
@@ -133,7 +245,7 @@
     <section id='contact' class="contact">
         <div class="vector-color-top"></div>
         <div class="contact_mandala">
-            <img src="/photos/svg/mandala_white.svg" alt="mandala">
+            <img src="/photos/svg/devalogowhite.svg" alt="mandala">
         </div>
         <div class="contact_mainHedTitle">
             <h1 id="contact-us">LÉPJ VELÜNK<br>KAPCSOLATBA</h1>
@@ -218,7 +330,7 @@
     <footer>
         <div class="footer">
             <p class="stb">
-                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Weboldalt készítette és üzemelteti: Studio Bromo</a></p>
         </div>
     </footer>
     <!-- MAP END -->

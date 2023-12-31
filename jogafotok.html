@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css"/>
+    <script defer  src="js/nav.js"></script>
     <script defer  src="js/main.js"></script>
     <script  src="js/map.js"></script>
     <script defer src="js/languageChange.js"></script>
@@ -34,20 +35,11 @@
                 </div>
                 <!-- MOBILE HAMI END-->
                 <div class="header_nav_container_logo">
-                    <img  src="/photos/svg/dy_small.svg" alt="szeged jóga stúdió logója">
+                    <img  src="/photos/svg/dysmall.svg" alt="szeged jóga stúdió logója">
                 </div>
                 
-                <ul class="header_nav_container_ul">
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a id="nav-2" href="jogafotok.php"><span class="btn_home">GALÉRIA</span></a></li>
-                    <li><a id="nav-3" href="orarend.php">ÓRAREND</a></li>
-                    <li><a id="nav-4" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                    <li><a id="nav-5" href="joga-hazirend.php">HÁZIREND</a></li>
-                    <li><a id="nav-6" href="arlista.php">ÁRLISTA</a></li>
-                    <li><a id="nav-7" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                    <li><a id="nav-8" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-                    <li id="nav-9" onClick="document.getElementById('contact').scrollIntoView();" class="btn_nav">kapcsolat</li>
-                </ul>
+                <ul class="header_nav_container_ul"></ul>
+
                 <!-- NAV SOCIAL MEDIA -->
                 <div class="header_nav_container_social">
                     <img id="hu" class="hidden" src="/photos/svg/hu.svg" width="34px" height="34px"  alt="deva yoga nyelv HUNGARY">
@@ -60,18 +52,8 @@
         </nav>
         <!-- MOBIL MENU-->
         <div class="mobile-menu">
-            <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
-                <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
-                <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
-                <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                <li><a class="mobile-rule" href="joga-hazirend.php">HÁZIREND</a></li>
-                <li><a class="mobile-prices" href="arlista.php">ÁRLISTA</a></li>
-                <li><a class="mobile-traning" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                <li><a class="mobile-type" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-            </ul>
+            <img src="/photos/homepage/hero_main.png" alt="szeged jóga stúdió logója">
+            <ul id="mobile-menu"></ul>
         </div>
     <!-- MOBILE END -->
     </header>
@@ -81,52 +63,59 @@
     <section id="#gallery" class="gallery">
         
         <div class="gallery_mandala">
-            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+            <img src="/photos/svg/devalogo.svg" alt="mandala">
         </div>
         <div class="gallery_mainHedTitle">
             <h1>GALÉRIA</h1>
         </div>
 
         <div class="gallery_container"> 
+
+            <div class="gallery_container_photoBox">
+                <a href="#popup0"><div class="photo kolcsey"></div></a>
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
+                <p class="galleryName">Kölcsey utcai jógatermünk</p>
+                <p class="galleryPhotoNumber">(12 kép)</p>
+            </div>
             
             <div class="gallery_container_photoBox">
                 <a href="#popup"><div class="photo"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">Jógatermünk</p>
                 <p class="galleryPhotoNumber">(15 kép)</p>
             </div>
             
             <div class="gallery_container_photoBox">
                 <a href="#popup2"><div class="photo acro"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">Acro Jóga</p>
                 <p class="galleryPhotoNumber">(6 kép)</p>
             </div>
 
             <div class="gallery_container_photoBox">
                 <a href="#popup3"><div class="photo egyeni"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">Egyéni Jóga</p>
                 <p class="galleryPhotoNumber">(7 kép)</p>
             </div>
 
             <div class="gallery_container_photoBox">
                 <a href="#popup4"><div class="photo illat"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">Illatesszencia</p>
                 <p class="galleryPhotoNumber">(6 kép)</p>
             </div>
 
             <div class="gallery_container_photoBox">
                 <a href="#popup5"><div class="photo elet"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">Életképek</p>
                 <p class="galleryPhotoNumber">(3 kép)</p>
             </div>
 
             <div class="gallery_container_photoBox">
                 <a href="#popup6"><div class="photo sokszinu"></div></a>
-               <div class="mandala"><img src="/photos/svg/mandala.svg" alt=""></div> 
+               <div class="mandala"><img src="/photos/svg/devalogo.svg" alt=""></div> 
                 <p class="galleryName">A jóga sokszínű</p>
                 <p class="galleryPhotoNumber">(2 kép)</p>
             </div>
@@ -143,7 +132,7 @@
     <section  id='contact' class="contact">
         <div class="vector-color-top"></div>
         <div class="contact_mandala">
-            <img src="/photos/svg/mandala_white.svg" alt="mandala">
+            <img src="/photos/svg/devalogowhite.svg" alt="mandala">
         </div>
         <div class="contact_mainHedTitle">
             <h1 id="contact-us">LÉPJ VELÜNK<br>KAPCSOLATBA</h1>
@@ -226,6 +215,40 @@
         <div id="map"></div>
     </section>
     <!-- MAP END -->
+    <!-- POP UP GALLERY 0-->
+    <div class="popup" id="popup0">       
+        <div class="popup_element">
+        <div class="close"><a href="#gallery">&#10006;</a></div>            
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img src="/photos/gallery/studiokölcsey/DevaYogaKöcsely1.jpg" alt="devá jóga photo galéria fotója"  class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely2.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely3.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely4.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely5.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely6.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely7.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely8.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely9.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely10.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely11.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-container"><img data-src="/photos/gallery/studiokölcsey/DevaYogaKöcsely12.jpg" class="swiper-lazy" /></div><div class="swiper-lazy-preloader"></div></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </div>
+    <!-- POP UP GALLERY 0 END-->
     <!-- POP UP GALLERY 1-->
     <div class="popup" id="popup">       
         <div class="popup_element">
@@ -400,7 +423,7 @@
     <footer>
         <div class="footer">
             <p class="stb">
-                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Weboldalt készítette és üzemelteti: Studio Bromo</a></p>
         </div>
     </footer>
     <!-- POP UP GALLERY 6 END-->

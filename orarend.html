@@ -8,6 +8,7 @@
     <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="css/style.css">
     <link  rel="stylesheet" href="css/timetable.css">
+    <script defer src="js/nav.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/languageChange.js"></script>
     <script  src="js/map.js"></script>
@@ -31,19 +32,11 @@
                 </div>
                 <!-- MOBILE HAMI END-->
                 <div class="header_nav_container_logo">
-                    <img  src="/photos/svg/dy_small.svg" alt="szeged jóga stúdió logója">
+                    <img  src="/photos/svg/dysmall.svg" alt="szeged jóga stúdió logója">
                 </div>
                 
                 <ul class="header_nav_container_ul">
-                    <li ><a href="index.php">HOME</a></li>
-                    <li ><a id="nav-2" href="jogafotok.php">GALÉRIA</a></li>
-                    <li ><a id="nav-3" href="orarend.php"><span class="btn_home">ÓRAREND</span></a></li>
-                    <li ><a id="nav-4" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                    <li ><a id="nav-5" href="joga-hazirend.php">HÁZIREND</a></li>
-                    <li ><a id="nav-6" href="arlista.php">ÁRLISTA</a></li>
-                    <li ><a id="nav-7" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                    <li ><a id="nav-8" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-                    <li id="nav-9" onClick="document.getElementById('contact').scrollIntoView();" class="btn_nav">kapcsolat</li>
+                  
                 </ul>
                 <!-- NAV SOCIAL MEDIA -->
                 <div class="header_nav_container_social">
@@ -57,18 +50,9 @@
         </nav>
         <!-- MOBIL MENU-->
         <div class="mobile-menu">
-            <img src="/photos/homepage/DY.png" alt="szeged jóga stúdió logója">
-            <ul>
-                <li><a href="index.php">HOME</a></li>
-                <li><a href="https://devayogastudio.booked4.us/public/book">ONLINE BEJELENTKEZÉS</a></li>
-                <li><a class="mobile-gallery" href="jogafotok.php">GALÉRIA</a></li>
-                <li><a class="mobile-timetable" href="orarend.php">ÓRAREND</a></li>
-                <li><a class="mobile-philo" href="jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                <li><a class="mobile-rule" href="joga-hazirend.php">HÁZIREND</a></li>
-                <li><a class="mobile-prices" href="arlista.php">ÁRLISTA</a></li>
-                <li><a class="mobile-traning" href="jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                <li><a class="mobile-type" href="oratipusok.php">ÓRATÍPUSOK</a></li>
-            </ul>
+            <img src="/photos/homepage/hero_main.png" alt="szeged jóga stúdió logója">
+            <ul id="mobile-menu"></ul>
+
         </div>
     <!-- MOBILE END -->
     </header>
@@ -78,15 +62,34 @@
     <section style="background-image: none;" class="main">
         
         <div class="main_mandala">
-            <img src="/photos/svg/mandala_big.svg" alt="mandala">
+            <img src="/photos/svg/devalogo.svg" alt="mandala">
         </div>
         <div class="main_mainHedTitle">
             <h1>ÓRAREND</h1>
         </div>
-        <div  style="margin-bottom: 40px;" class="w-100"><p style="color:rgb(6, 6, 34)">Kedves érdeklődő! A lenti „foglalok” gomb megnyomásával láthatja aktuális órarendünket. Online elvégezheti a foglalását, illetve regisztrációját, ha netán úgy döntene , hogy módosítást vagy törlést hajt végre. </b></p></div>
+
+        <div class="oktatok_container-grid_col-2">
+                        
+            <div onclick="window.location.href = 'https://devayogastudio.booked4.us/public/?CalendarId=3&Culture=hu'; return false;" class=" cursor-pointer textbox m-w30">
+                <div class="textbox-impgpos"><img src="/photos/svg/devalogo.svg" width="50" height="50" loading ="lazy" alt="#"></div>
+                <h2>Kölcsey utcai órarendünk</h2>
+                <p class="fs-25 t-a-c ">És online bejelentkezés</p>
+                <p class="t-a-c fs-2 mg-t-3">Óratípusok:</p>
+                <p class="t-a-c">Deva Yoga</p>
+            </div>
+            
+            <div onclick="window.location.href = 'https://devayogastudio.booked4.us/public/?CalendarId=1&Culture=hu'; return false;" class=" cursor-pointer textbox m-w30">
+                <div class="textbox-impgpos"><img src="/photos/svg/devalogo.svg" width="50" height="50"loading ="lazy" alt="#"></div>
+                <h2>Tisza Lajos körúti órarendünk</h2>
+                <p class="fs-25 t-a-c ">És online bejelentkezés</p>
+                <p class="t-a-c fs-2 mg-t-3">Óratípusok:</p>
+                <p class="t-a-c">Deva Yoga</p>
+                <p class="t-a-c">Devá Kids</p>
+            </div>
+            
+        </div>
         <div  style="margin-bottom: 40px;" class="w-100"><p style="color:rgb(6, 6, 34)">Amennyiben a választott óra már teltházas, itt fel tud iratkozni a várólistára:  <a style="text-decoration: underline; font-weight: bold; color: rgb(24, 0, 17);" href="/varolista.html">Várólista</a></b></p></div>
 
-        <iframe class="iframe-orarend" src="https://devayogastudio.booked4.us/public/book"></iframe>
     </section>
     <!-- ÓRARENND END -->
     <div style="background-image: none;" class="space"></div> 
@@ -94,7 +97,7 @@
     <section  id='contact' class="contact">
         <div class="vector-color-top"></div>
         <div class="contact_mandala">
-            <img src="/photos/svg/mandala_white.svg" alt="mandala">
+            <img src="/photos/svg/devalogowhite.svg" alt="mandala">
         </div>
         <div class="contact_mainHedTitle">
             <h1 id="contact-us">LÉPJ VELÜNK<br>KAPCSOLATBA</h1>
@@ -180,7 +183,7 @@
     <footer>
         <div class="footer">
             <p class="stb">
-                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Website by Studio Bromo</a></p>
+                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Weboldalt készítette és üzemelteti: Studio Bromo</a></p>
         </div>
     </footer>
     <!-- MAP END -->
