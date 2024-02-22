@@ -2,7 +2,7 @@
   "name": "devayogastudio",
   "version": "1.0.0",
   "description": "website of deva yoga studio szeged",
-  "main": "main.js",
+  "main": "mainCompresd240222.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",

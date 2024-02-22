@@ -7,67 +7,49 @@
     <meta name="description" content="A gyerekjóga játékos és interaktív formában vezeti be a gyerekeket a jógagyakorlatok világába, segíti a testtudatosság fejlesztését, az egyensúly és a koncentráció képességét.">
     <link  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,500;1,600&family=Inter:wght@700&family=Lato&family=Open+Sans:wght@700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="/css/style.css">
-    <script defer src="../js/main.js"></script>
-    <script  src="../js/map.js"></script>
+    <script defer src="../js/mainCompresd240222.js"></script>
+    <script  src="../js/mapCompresd240222.js"></script>
     <title>Gyerekjóga - Devá Jóga Stúdió</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <nav class="header_nav">
-            
-            <div class="header_nav_container">
-                <!-- MOBILE HAMI -->
-                <div class="mobile-menu-hambi">
-                    <div class="mobile-menu-hambi-1"></div>
-                    <div class="mobile-menu-hambi-2"></div>
-                    <div class="mobile-menu-hambi-3"></div>
-                </div>
-                <div class="mobile-menu-hambi-close">
-                    <div class="mobile-menu-hambi-close-1"></div>
-                    <div class="mobile-menu-hambi-close-2"></div>
-                </div>
-                <!-- MOBILE HAMI END-->
-                <div class="header_nav_container_logo">
-                    <img  src="/photos/svg/dysmall.svg" alt="szeged jóga stúdió logója">
-                </div>
-                
-                <ul class="header_nav_container_ul">
-                    <li><a href="../index.php">HOME</a></li>
-                    <li><a href="../jogafotok.php">GALÉRIA</a></li>
-                    <li><a href="../orarend.php">ÓRAREND</a></li>
-                    <li><a href="../jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                    <li><a href="../joga-hazirend.php">HÁZIREND</a></li>
-                    <li><a href="../arlista.php">ÁRLISTA</a></li>
-                    <li><a href="../jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                    <li><a href="../oratipusok.php"><span class="btn_home">ÓRATÍPUSOK</span></a></li>
-                    <div class="postion"><li class="btn_nav-hover"><span class="btn_nav">kapcsolat</span></li></div>
-                </ul>
+    	<!-- HEADER -->
+		<header class="header">
+			<nav class="header_nav">
+				<div class="header_nav_container">
+					<!-- MOBILE HAMI -->
+					<div class="mobile-menu-hambi">
+						<div class="mobile-menu-hambi-1"></div>
+						<div class="mobile-menu-hambi-2"></div>
+						<div class="mobile-menu-hambi-3"></div>
+					</div>
+					<div class="mobile-menu-hambi-close">
+						<div class="mobile-menu-hambi-close-1"></div>
+						<div class="mobile-menu-hambi-close-2"></div>
+					</div>
+					<!-- MOBILE HAMI END-->
+					<div class="header_nav_container_logo">
+						<img src="/photos/svg/dysmall.svg" alt="szeged jóga stúdió logója" />
+					</div>
 
-                <div class="header_nav_container_social">
-                    <a href="https://www.instagram.com/devayoga_studio/"><img  src="/photos/social/instagram.svg" alt="devá yoga stúdio instragram elérhetőség"></a>
-                    <a href="https://www.facebook.com/devayogastudio"> <img src="/photos/social/facebook.svg" alt="devá yoga stúdio facebook elérhetőség"></a></a> 
-                </div>
-
-            </div>
-        </nav>
-    <!-- MOBILE MENU -->
-        <div class="mobile-menu">
-            <img src="/photos/homepage/hero_main.png" alt="#">
-            <ul>
-                <li><a href="../index.php"> HOME</a></li>
-                <li><a href="../jogafotok.php">GALÉRIA</a></li>
-                <li><a href="../orarend.php">ÓRAREND</a></li>
-                <li><a href="../jogaszemleletunk.php">JÓGASZEMLÉLETÜNK</a></li>
-                <li><a href="../joga-hazirend.php">HÁZIREND</a></li>
-                <li><a href="../arlista.php">ÁRLISTA</a></li>
-                <li><a href="../jogaoktato-kepzes.php">JÓGAOKTATÓ KÉPZÉS</a></li>
-                <li><a href="../oratipusok.php">ÓRATÍPUSOK</a></li>
-            </ul>
-        </div>
-    <!-- MOBILE END -->
-    </header>
-    <!-- HEADER  END-->
+					<ul class="header_nav_container_ul"></ul>
+					<!-- NAV SOCIAL MEDIA -->
+					<div class="header_nav_container_social">
+						<img id="hu" class="hidden" src="/photos/svg/hu.svg" width="34px" height="34px" alt="deva yoga nyelv HUNGARY" />
+						<img id="eng" src="/photos/svg/eng.svg" width="34px" height="34px" alt="ENGLISH LANGUAGE DEVA YOGA" />
+						<a href="https://www.instagram.com/devayoga_studio/"><img src="/photos/social/instagram.svg" alt="devá yoga stúdio instragram elérhetőség" /></a>
+						<a href="https://www.facebook.com/devayogastudio"> <img src="/photos/social/facebook.svg" alt="devá yoga stúdio facebook elérhetőség" /></a>
+					</div>
+					<!-- NAV SOCIAL MEDIA END -->
+				</div>
+			</nav>
+			<!-- MOBIL MENU-->
+			<div class="mobile-menu">
+				<img src="/photos/homepage/hero_main.png" alt="szeged jóga stúdió logója" />
+				<ul id="mobile-menu"></ul>
+			</div>
+			<!-- MOBILE END -->
+		</header>
+		<!-- HEADER  END-->
 
     <!-- ÓRATÍpusok -->
     <section class="oratipusok">
@@ -81,20 +63,11 @@
 
         <div class="oratipusok_container"> 
 
-            <div class="oratipusok_container_titles not-visible-up">
-                <p onclick="document.location='../oratipusok/asthaga.php'"><span class="clear">Ashtanga</p></span>
-                <p onclick="document.location='../oratipusok/vinyasa.php'">Vinyasa flow</p>
-                <p onclick="document.location='../oratipusok/babamamajoga.php'">KisBabás Baba-Mama jóga</p>
-                <p onclick="document.location='../oratipusok/hathaflow.php'">Hatha flow</p>
-                <p onclick="document.location='../oratipusok/gerincterapiasjoga.php'">Gerincterápiás jóga</p>
-                <p onclick="document.location='../oratipusok/yinjoga.php'">Yin jóga</p>
-                <p onclick="document.location='../oratipusok/illateszencias-hatha-joga.php'">Illat Eszenciás Hatha Jóga</p>
-                <p onclick="document.location='../oratipusok/kismamajoga.php'">Kismama jóga</p>
-                <p onclick="document.location='../oratipusok/seniorjoga.php'">Senior jóga</p>
-                <p onclick="document.location='../oratipusok/alapozo.php'">Alapozó Jóga</p>
-                <p><span class="asth clear-color">Gyerekjóga</span></p>
+         		<!-- THE LIST IS RENDERED BY JAVASCRIPT -->
 
-            </div>
+				<div class="oratipusok_container_titles not-visible-up"></div>
+
+				<!-- THE LIST IS RENDERED BY JAVASCRIPT -->
 
             <div class="oratipusok_container_mainText">
             
@@ -133,19 +106,8 @@
                                                 </p>
             </div>
 
-            <div class="oratipusok_container_titles not-visible visible">
-                <p onclick="document.location='../oratipusok/asthaga.php'"><span class="clear">Ashtanga</p></span>
-                <p onclick="document.location='../oratipusok/vinyasa.php'">Vinyasa flow</p>
-                <p onclick="document.location='../oratipusok/babamamajoga.php'">KisBabás Baba-Mama jóga</p>
-                <p onclick="document.location='../oratipusok/hathaflow.php'">Hatha flow</p>
-                <p onclick="document.location='../oratipusok/gerincterapiasjoga.php'">Gerincterápiás jóga</p>
-                <p onclick="document.location='../oratipusok/yinjoga.php'">Yin jóga</p>
-                <p onclick="document.location='../oratipusok/illateszencias-hatha-joga.php'">Illat Eszenciás Hatha Jóga</p>
-                <p onclick="document.location='../oratipusok/kismamajoga.php'">Kismama jóga</p>
-                <p onclick="document.location='../oratipusok/seniorjoga.php'">Senior jóga</p>
-                <p onclick="document.location='../oratipusok/alapozo.php'">Alapozó Jóga</p>
-                <p><span class="asth clear-color">Gyerekjóga</span></p>
-            </div>
+            <div class="oratipusok_container_titles reder-2-element not-visible-up unvisible visible"></div>
+
 
         </div>
     </section>
@@ -174,7 +136,10 @@
                     <div class="contact_container_detailes_phone_imgbox"><img src="/photos/svg/mail.svg" alt="#"> </div>
                     <p class="contact_container_detailes_phone_email">devayogastudio@gmail.com</p>
                 </div>
-
+                <div class="contact_container_detailes_pin">
+                    <div class="contact_container_detailes_phone_imgbox-pin">  <img src="/photos/svg/map-pin.svg" width="31" height="31" loading ="lazy" alt="#"> </div>
+                    <p class="contact_container_detailes_phone_address">Kölcsey utca 13 <br>6721, Szeged</p>
+                </div>
                 <div class="contact_container_detailes_pin">
                     <div class="contact_container_detailes_phone_imgbox-pin">  <img src="/photos/svg/map-pin.svg" alt="#"> </div>
                     <p class="contact_container_detailes_phone_address">Tisza Lajos krt. 37 <br>6721, Szeged</p>
@@ -233,7 +198,7 @@
     <footer>
         <div class="footer">
             <p class="stb">
-                Copyright 2023 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Weboldalt készítette és üzemelteti: Studio Bromo</a></p>
+                Copyright 2024 © devayoga.hu | <a class="stb" href="https://studiobromo.hu/">Weboldalt készítette és üzemelteti: Studio Bromo</a></p>
         </div>
     </footer>
 </body>

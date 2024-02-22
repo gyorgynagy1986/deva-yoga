@@ -11,7 +11,9 @@ html {
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: open sans, sans-serif;
+  font-family:
+    open sans,
+    sans-serif;
 }
 
 .contact_container_form {
@@ -34,7 +36,8 @@ form {
   padding: 4rem;
   background-color: #ffffff;
   border-radius: 5px;
-  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),

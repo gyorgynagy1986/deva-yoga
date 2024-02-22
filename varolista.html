@@ -1,69 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/varolista.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/varolista.css" />
     <title>Várólista - Devá Yoga Studio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contact_container_form">
-        
-       <div class="h1">
+      <div class="h1">
         <h1>Várólistára feliratkozás</h1>
-        <p>Kedves Érdeklődő! Ha az általad kiválasztott óra jelenleg teltházas, ezzel a feliratkozással felkerülsz a várólistánkra, felszabadult hely esetén pedig emailben értesítünk. </p>
-    </div>
+        <p>
+          Kedves Érdeklődő! Ha az általad kiválasztott óra jelenleg teltházas,
+          ezzel a feliratkozással felkerülsz a várólistánkra, felszabadult hely
+          esetén pedig emailben értesítünk.
+        </p>
+      </div>
 
-    <form action="https://getform.io/f/18a160d1-db4d-4ea5-b178-e1ed54fbb6f4" method="POST">
-
+      <form
+        action="https://getform.io/f/18a160d1-db4d-4ea5-b178-e1ed54fbb6f4"
+        method="POST"
+      >
         <label for="name">Név:</label>
-            <input type="text" id="name" name="Név" required>
-            
-            <label for="email">Email cím:</label>
-            <input type="email" id="email" name="Email" required>
-            
-            <label for="phone">Telefonszám:</label>
-            <input type="tel" id="phone" name="Telefonszám" required>
-            
-            <label for="phone">Foglalt helyek száma:</label>
-            <input type="tel" id="phone" name="Helyek száma" required>
-            
-            <label for="date">Dátum:</label>
-            <input type="date" id="date" name="Dátum" required>
-            
-            <label class="drop" for="Jógaóra">Jógaóra kiválasztása:</label>
-            <select id="dropdown" name="Jógaóra" required>
-              <option value="Hétindító Hatha Jóga">Hétindító Hatha Jóga </option>
-              <option value="Tini jóga">Tini jóga	</option>
-              <option value="Tematikus Hatha flow">Tematikus Hatha flow</option>
-              <option value="Astanga I. jóga">Astanga I. jóga	</option>
-              <option value="Kismama jóga Dettivel">Kismama jóga Dettivel	</option>
-              <option value="Baba-Mama jóga">Baba-Mama jóga	</option>
-              <option value="Yin jóga - Páros oktatós">Yin jóga - Páros oktatós	</option>
-              <option value="Hangfürdővel egybekötött Yin jóga">Hangfürdővel egybekötött Yin jóga	</option>
-              <option value="Gerincterápiás jóga">Gerincterápiás jóga	</option>
-              <option value="Soul Flow">Soul Flow	</option>
-              <option value="Astanga I. jóga - Páros oktatós">Astanga I. jóga - Páros oktatós	</option>
-              <option value="Női jóga - Tematikus">Női jóga - Tematikus	</option>
-              <option value=">Morning soft flow">Morning soft flow	</option>
-              <option value="Vinyassa flow">Vinyassa flow	</option>
-              <option value=">Kismama jóga Klauval">Kismama jóga Klauval	</option>
-              <option value="Gyerekjóga">Gyerekjóga	</option>
-              <option value=">Gerincterápiás jóga, jóga nidrával">Gerincterápiás jóga, jóga nidrával	</option>
-              <option value="Alapozó jóga">Alapozó jóga	</option>
-              <option value="Stresszoldó gerincjóga">Stresszoldó gerincjóga	</option>
-              <option value="Csakraharmonizáló Hatha jóga">Csakraharmonizáló Hatha jóga	</option>
-              <option value="International Yoga">International Yoga	</option>
-              </select>
-              <div style="display: flex; margin-top: 20px;" class="policy-input">
-                <input style="margin-right: 10px; width: 25px;" type="checkbox" name="policy" class="policy-cbox" id="policy" required>
-                <label style="font-size: 15px; font-family: roboto; color: rgb(0, 0, 0);" for="policy" class="policy-input"> <p> Hozzájárulok adataim kezeléséhez az &nbsp;<a style="text-decoration: underline; font-weight: bold; color: black;" href="/adatvedelem.html">adatvédelmi szabályzat</a>&nbsp;alapján.</p>
-                </label> 
-            </div>
-             <button type="submit">Feliratkozom</button>
-             </form>
-          </div>
-          
-        </body>
+        <input type="text" id="name" name="Név" required />
+
+        <label for="email">Email cím:</label>
+        <input type="email" id="email" name="Email" required />
+
+        <label for="phone">Telefonszám:</label>
+        <input type="tel" id="phone" name="Telefonszám" required />
+
+        <label for="phone">Foglalt helyek száma:</label>
+        <input type="tel" id="phone" name="Helyek száma" required />
+
+        <label for="date">Dátum:</label>
+        <input type="date" id="date" name="Dátum" required />
+
+        <label class="drop" for="Jógaóra">Jógaóra kiválasztása:</label>
+        <select id="dropdown" name="Jógaóra" required>
+          <option value="Hétindító Hatha Jóga">Hétindító Hatha Jóga</option>
+          <option value="Tini jóga">Tini jóga</option>
+          <option value="Tematikus Hatha flow">Tematikus Hatha flow</option>
+          <option value="Astanga I. jóga">Astanga I. jóga</option>
+          <option value="Kismama jóga Dettivel">Kismama jóga Dettivel</option>
+          <option value="Baba-Mama jóga">Baba-Mama jóga</option>
+          <option value="Yin jóga - Páros oktatós">
+            Yin jóga - Páros oktatós
+          </option>
+          <option value="Hangfürdővel egybekötött Yin jóga">
+            Hangfürdővel egybekötött Yin jóga
+          </option>
+          <option value="Gerincterápiás jóga">Gerincterápiás jóga</option>
+          <option value="Soul Flow">Soul Flow</option>
+          <option value="Astanga I. jóga - Páros oktatós">
+            Astanga I. jóga - Páros oktatós
+          </option>
+          <option value="Női jóga - Tematikus">Női jóga - Tematikus</option>
+          <option value=">Morning soft flow">Morning soft flow</option>
+          <option value="Vinyassa flow">Vinyassa flow</option>
+          <option value=">Kismama jóga Klauval">Kismama jóga Klauval</option>
+          <option value="Gyerekjóga">Gyerekjóga</option>
+          <option value=">Gerincterápiás jóga, jóga nidrával">
+            Gerincterápiás jóga, jóga nidrával
+          </option>
+          <option value="Alapozó jóga">Alapozó jóga</option>
+          <option value="Stresszoldó gerincjóga">Stresszoldó gerincjóga</option>
+          <option value="Csakraharmonizáló Hatha jóga">
+            Csakraharmonizáló Hatha jóga
+          </option>
+          <option value="International Yoga">International Yoga</option>
+        </select>
+        <div style="display: flex; margin-top: 20px" class="policy-input">
+          <input
+            style="margin-right: 10px; width: 25px"
+            type="checkbox"
+            name="policy"
+            class="policy-cbox"
+            id="policy"
+            required
+          />
+          <label
+            style="font-size: 15px; font-family: roboto; color: rgb(0, 0, 0)"
+            for="policy"
+            class="policy-input"
+          >
+            <p>
+              Hozzájárulok adataim kezeléséhez az &nbsp;<a
+                style="
+                  text-decoration: underline;
+                  font-weight: bold;
+                  color: black;
+                "
+                href="/adatvedelem.html"
+                >adatvédelmi szabályzat</a
+              >&nbsp;alapján.
+            </p>
+          </label>
+        </div>
+        <button type="submit">Feliratkozom</button>
+      </form>
+    </div>
+  </body>
 </html>

@@ -1,426 +1,428 @@
 :root {
-    --font1: "Lora", serif;
-    --font2: "Poppins", sans-serif;
-    --font3: "Crimson Text", serif;
-  }
-  
-  *:focus,
-  *:active {
-    outline: none;
-    box-shadow: none;
-    /* any other relevant styles */
-  }
-  
+  --font1: "Lora", serif;
+  --font2: "Poppins", sans-serif;
+  --font3: "Crimson Text", serif;
+}
+
+*:focus,
+*:active {
+  outline: none;
+  box-shadow: none;
+  /* any other relevant styles */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 37.5em) {
   html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     overflow-x: hidden;
   }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      scroll-behavior: auto;
-      overflow-x: hidden;
-    }
-  }
-  
-  body {
-    overflow: hidden;
-    background-color: rgb(248, 248, 248);
-  }
-  
-  li {
-    font-size: max(16px, min(4vw, 20px));
-    font-family: var(--font2);
-    font-weight: 300;
-    text-indent: initial;
-    margin-bottom: 1rem;
-  }
-  
-  section {
-    margin-bottom: 5rem;
-  }
-  
-  a:link,
-  a:visited {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  p {
-    font-size: max(16px, min(4vw, 20px));
-    font-family: var(--font2);
-    font-weight: 300;
-    text-indent: initial;
-    margin-bottom: 2rem;
-  }
-  
-  h2 {
-    font-size: max(32px, min(5vw, 45px));
-    font-family: var(--font3);
-    font-weight: 500;
-    text-indent: initial;
-    text-align: center;
-  }
-  
-  button {
-    padding: 1rem 2.3rem 1rem 2.3rem;
-    text-transform: uppercase;
-    font-family: var(--font2);
-    font-weight: 400;
-    font-size: 1.8rem;
-    border: none;
-    letter-spacing: 0.003em;
-    background-color: #f43561;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #f96e8e;
-  }
-  
-  .img-center {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button-container {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(248, 248, 248);
+}
+
+li {
+  font-size: max(16px, min(4vw, 20px));
+  font-family: var(--font2);
+  font-weight: 300;
+  text-indent: initial;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: max(16px, min(4vw, 20px));
+  font-family: var(--font2);
+  font-weight: 300;
+  text-indent: initial;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: max(32px, min(5vw, 45px));
+  font-family: var(--font3);
+  font-weight: 500;
+  text-indent: initial;
+  text-align: center;
+}
+
+button {
+  padding: 1rem 2.3rem 1rem 2.3rem;
+  text-transform: uppercase;
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 1.8rem;
+  border: none;
+  letter-spacing: 0.003em;
+  background-color: #f43561;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f96e8e;
+}
+
+.img-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.533)),
+    url(/photos_jogakepzes/unnamed.jpg);
+  width: 100%;
+  height: 100%;
+  min-height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: aliceblue;
+  text-align: center;
+  font-size: max(20px, min(3vw, 74px));
+}
+
+.header-photo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.533)),
+    url(/photos/balaton/cover1.jpg);
+}
+
+@media screen and (max-width: 600px) {
   header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.533)),
-      url(/photos_jogakepzes/unnamed.jpg);
-    width: 100%;
-    height: 100%;
-    min-height: 80vh;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: aliceblue;
-    text-align: center;
-    font-size: max(20px, min(3vw, 74px));
-  }
-  
-  .header-photo {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.533)),
-    url(/photos/balaton/cover1.jpg);
-  }
-  
-  @media screen and (max-width: 600px) {
-    header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.533)),
       url(/photos/balaton/cover1.jpg);
-    }
   }
-  
-  .h1-container {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background-color: #04020353;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  
-  .h1-container h1 {
-    font-family: var(--font3) !important;
-    font-weight: 100;
-  }
-  
-  span {
-    text-align: center;
-  }
-  
-  .txt-center {
-    text-align: center;
-  }
-  
+}
+
+.h1-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #04020353;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.h1-container h1 {
+  font-family: var(--font3) !important;
+  font-weight: 100;
+}
+
+span {
+  text-align: center;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+main {
+  margin-inline: auto;
+  background-color: rgb(255, 253, 253);
+  width: 90%;
+  max-width: 1220px;
+  position: relative;
+  top: -15px;
+  padding: 2rem;
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (max-width: 600px) {
   main {
-    margin-inline: auto;
-    background-color: rgb(255, 253, 253);
-    width: 90%;
-    max-width: 1220px;
-    position: relative;
-    top: -15px;
-    padding: 2rem;
-    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-      100px 100px 80px rgba(0, 0, 0, 0.07);
-  }
-  
-  @media screen and (max-width: 600px) {
-    main {
-      width: auto;
-    }
-  }
-  
-  .kinek-ajanlott h2 {
-  }
-  
-  .udv img {
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-  }
-  
-  .image-face {
-    max-width: 500px !important;
-  }
-  
-  .image-ba {
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-  }
-  
-  .form_group {
-    padding: 0.5rem;
-  }
-  
-  .contact_name {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    font-family: var(--font2);
-  }
-  
-  .form_input {
-    max-width: 35rem;
-    width: 100%;
-    height: 3rem;
-    font-family: open sans, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: #000;
-    font-family: var(--font2);
-  }
-  
-  .form_text[type="message"]:focus {
-    background-color: rgba(224, 255, 245, 0.185);
-    font-family: var(--font2);
-    font-size: 1.7rem;
-  }
-  
-  .form_text {
-    font-family: open sans, sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-    color: #000;
-    line-height: 35px;
-    width: 100%;
-    height: 15rem;
-    font-family: var(--font2);
-    font-size: 1.7rem;
-  }
-  
-  input[type="submit"] {
-    background-color: #f43561;
-    border: none;
-    font-size: 15px;
-    font-family: var(--font2);
-    text-transform: uppercase;
-    color: #ffffff;
-    padding: 12px 32px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #fff;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 0 1px rgb(2, 48, 33) inset;
-  }
-  
-  @media only screen and (max-width: 1150px) {
-    input[type="submit"]:hover {
-      background-color: #f95177;
-      color: #000000;
-      box-shadow: none;
-    }
-  }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-  }
-  
-  .line {
-    width: 100%;
-    border-bottom: 1px solid #464646;
-    margin-bottom: 10rem;
-    margin-top: 3rem;
-  }
-  
-  .team {
     width: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
-  
-  .okt-container {
-    width: 250px;
+}
+
+.kinek-ajanlott h2 {
+}
+
+.udv img {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.image-face {
+  max-width: 500px !important;
+}
+
+.image-ba {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+.form_group {
+  padding: 0.5rem;
+}
+
+.contact_name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: var(--font2);
+}
+
+.form_input {
+  max-width: 35rem;
+  width: 100%;
+  height: 3rem;
+  font-family:
+    open sans,
+    sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000;
+  font-family: var(--font2);
+}
+
+.form_text[type="message"]:focus {
+  background-color: rgba(224, 255, 245, 0.185);
+  font-family: var(--font2);
+  font-size: 1.7rem;
+}
+
+.form_text {
+  font-family:
+    open sans,
+    sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #000;
+  line-height: 35px;
+  width: 100%;
+  height: 15rem;
+  font-family: var(--font2);
+  font-size: 1.7rem;
+}
+
+input[type="submit"] {
+  background-color: #f43561;
+  border: none;
+  font-size: 15px;
+  font-family: var(--font2);
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px 32px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 0 1px rgb(2, 48, 33) inset;
+}
+
+@media only screen and (max-width: 1150px) {
+  input[type="submit"]:hover {
+    background-color: #f95177;
+    color: #000000;
+    box-shadow: none;
+  }
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.line {
+  width: 100%;
+  border-bottom: 1px solid #464646;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+}
+
+.team {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.okt-container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.okt-container:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.oktatok {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: #8a2be2;
+  margin-bottom: 1rem;
+}
+
+.detti {
+  background-image: url(/photos_jogakepzes/bettyface.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tomi {
+  background-image: url(/photos_jogakepzes/tomiface.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bab {
+  background-image: url(/photos_jogakepzes/babface.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bea {
+  background-image: url(/photos_jogakepzes/bea.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tkcover {
+  background-image: url(/photos/jogakepzes/tkcover.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.klau {
+  background-image: url(/photos_jogakepzes/klau.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.klau2 {
+  background-image: url(/photos/jogakepzes//gyerek/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.bea2 {
+  background-image: url(/photos/jogakepzes//gyerek/1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.col-1 {
+  width: 45%;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid rgba(235, 132, 142, 0.562);
+  text-align: left;
+}
+
+.sfs {
+  font-size: 25px;
+  margin: 0 !important;
+}
+
+.sfsc {
+  margin: 0.5rem;
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 13px !important;
+  font-family: var(--font1) !important;
+  letter-spacing: 0.004em;
+}
+
+@media only screen and (max-width: 1150px) {
+  .okt-container:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .sfs {
+    font-size: 20px;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .team {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
-  .okt-container:not(:last-child) {
-    margin-right: 2rem;
-  }
-  
-  .oktatok {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-color: #8a2be2;
-    margin-bottom: 1rem;
-  }
-  
-  .detti {
-    background-image: url(/photos_jogakepzes/bettyface.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .tomi {
-    background-image: url(/photos_jogakepzes/tomiface.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .bab {
-    background-image: url(/photos_jogakepzes/babface.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .bea {
-    background-image: url(/photos_jogakepzes/bea.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .tkcover {
-    background-image: url(/photos/jogakepzes/tkcover.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  
-  
-  .klau {
-    background-image: url(/photos_jogakepzes/klau.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .klau2 {
-    background-image: url(/photos/jogakepzes//gyerek/3.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .bea2 {
-    background-image: url(/photos/jogakepzes//gyerek/1.png);
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .col-1 {
-    width: 45%;
-    padding: 10px;
-    margin: 20px;
-    border: 1px solid rgba(235, 132, 142, 0.562);
-    text-align: left;
-  }
-  
-  .sfs {
-    font-size: 25px;
-    margin: 0 !important;
-  }
-  
-  .sfsc {
-    margin: 0.5rem;
-    font-size: 18px;
-  }
-  
-  .bold {
-    font-weight: bold;
-    font-size: 13px !important;
-    font-family: var(--font1) !important;
-    letter-spacing: 0.004em;
-  }
-  
-  @media only screen and (max-width: 1150px) {
-    .okt-container:not(:last-child) {
-      margin-right: 0;
-    }
-  
-    .sfs {
-      font-size: 20px;
-      margin: 0 !important;
-    }
-  }
-  
-  @media only screen and (max-width: 900px) {
-    .team {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .okt-container {
-      margin-bottom: 4rem;
-    }
-  
-    .form_input {
-      max-width: 100%;
-    }
-  
-    .oktatok:not(:last-child) {
-      margin-right: 0;
-    }
-  
-    .col-1 {
-      width: 90%;
-    }
-  
-    .okt-container:not(:last-child) {
-      margin-right: 0;
-    }
-  
-    .contact_name {
-      display: flex;
-      justify-content: center;
-    }
-  }
-  
-  .mb4 {
+
+  .okt-container {
     margin-bottom: 4rem;
   }
-  
-  footer {
-    text-align: center;
-    font-size: 1.3rem;
+
+  .form_input {
+    max-width: 100%;
   }
-  
-  footer p {
-    font-size: 1.3rem;
+
+  .oktatok:not(:last-child) {
+    margin-right: 0;
   }
-  
+
+  .col-1 {
+    width: 90%;
+  }
+
+  .okt-container:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .contact_name {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.mb4 {
+  margin-bottom: 4rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+footer p {
+  font-size: 1.3rem;
+}

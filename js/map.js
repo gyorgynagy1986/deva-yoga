@@ -2,8 +2,8 @@ let map;
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 46.25624369819664, lng: 20.148850679397587 },
-    zoom: 16.5,
+    center: { lat: 46.25172, lng: 20.14573 },
+    zoom: 15.5,
     mapId: "dc748274853a2ec0",
   });
 
@@ -17,7 +17,7 @@ function initMap() {
   });
 
   new google.maps.Marker({
-    position: { lat: 46.251720, lng: 20.145730 },
+    position: { lat: 46.25172, lng: 20.14573 },
     map,
     icon: image,
     title: "Devá Yoga Studio, kölcsey utca 13",

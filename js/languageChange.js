@@ -8,7 +8,7 @@ const typeselection = document.querySelectorAll(".type-yoga");
 // TIMETABLE OPACITY
 
 const containerTimetableSelector = document.querySelectorAll(
-  ".main_container_day"
+  ".main_container_day",
 );
 const InternationalClasses = document.querySelectorAll(".inter");
 
@@ -26,7 +26,7 @@ const mediaQfixe = window.matchMedia("(max-width: 700px)");
 const nav = [
   "gallery",
   "timetable",
-  "our philosophy",
+  "About",
   "House rule",
   "prices",
   "yoga training",
@@ -35,15 +35,12 @@ const nav = [
   "contact",
 ];
 
-const navOnlineBooking = [
-  "booking",
-];
-
+const navOnlineBooking = ["booking"];
 
 const navHu = [
   "GALÉRIA",
   "ÓRAREND",
-  "JÓGASZEMLÉLETÜNK",
+  "Rólunk",
   "HÁZIREND",
   "ÁRLISTA",
   "JÓGAOKTATÓ KÉPZÉS",
@@ -226,7 +223,6 @@ btnEng.addEventListener("click", () => {
   localStorage.setItem("mobile-camp", nav[7]);
   localStorage.setItem("mobile-booking", navOnlineBooking[0]);
 
-
   // NAV GLOBAL
 
   localStorage.setItem("nav2", saveNav2);
@@ -285,7 +281,7 @@ btnHu.classList.remove(`${localStorage.getItem("saveButton")}`);
 
 opactityHandler(
   `${localStorage.getItem("opacityClassesAll")}`,
-  `${localStorage.getItem("opacityClassesInter")}`
+  `${localStorage.getItem("opacityClassesInter")}`,
 );
 
 // NAV GLOBAL
@@ -356,7 +352,7 @@ if (
   // Main CONTENT HEADER (BAD SOLUTION)
 
   const mianContentText = (document.querySelector(
-    ".header_content_col-1_text"
+    ".header_content_col-1_text",
   ).innerText = localStorage.getItem("mianContent"));
   if (!mianContentText)
     document.querySelector(".header_content_col-1_text").innerText =
